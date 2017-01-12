@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>电信宽带服务窗</title>	
+	<link rel="stylesheet" href="../app/css/index.css">
+	<script src="../app/js/jquery.js"></script>
+</head>
+<body>	  
+	<div class="g_wrapper">
+		<div class="header">  
+			<a class="logo" href="javascript:void(0)"><img src="../app/image/fwc_logo.jpg" alt=""></a>
+			<div class="header_right">
+				<img src="../app/image/head_icon.png" alt="">
+				<span class="say_hello">早上好</span><span class="user_account">2891882@gd.163</span>
+			</div>
+		</div>
+		<div class="main_wrp">
+			<div class="tabs">
+				<ul class="clearfix">
+					<li class="nav_btn active" data-show="#block1">我的宽带</li>
+					<li class="nav_btn" data-show="#block2">智能服务</li>
+					<li class="nav_btn" data-show="#block3">尊享礼券</li>
+					<li class="nav_btn" data-show="#block4">业务办理</li>
+					<li class="nav_btn" data-show="#block5">我的账单</li>
+				</ul>
+			</div>
+			<div class="tabs_block_wrp">
+				<div id="block1" class="tabs_block active">1</div>
+				<div id="block2" class="tabs_block" style="display:none;">2</div>
+				<div id="block3" class="tabs_block" style="display:none;">3</div>
+				<div id="block4" class="tabs_block" style="display:none;">4</div>
+				<div id="block5" class="tabs_block" style="display:none;">5</div>
+			</div>
+		</div>
+	</div>
+	
+	<script>
+		$(function(){
+			var iFunctions = {};
+
+			iFunctions = {
+				init: function(){
+					iFunctions.tabsFuc();
+				},
+				tabsFuc: function(){
+					var $nav_btn = $('.nav_btn');
+
+					$nav_btn.on('click', function(){
+						if($(this).hasClass('active')){
+							return false
+						} else {
+							$(this).addClass('active').siblings().removeClass('active');
+							$($(this).attr('data-show')).siblings().hide().end().show();
+						}
+					});
+				}
+			};
+
+			var networkService = (function(){
+				iFunctions.init();
+			}());		
+		});
+	</script>
+</body>
+</html>

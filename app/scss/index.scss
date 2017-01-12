@@ -1,0 +1,100 @@
+@import './reset.scss';
+
+body {
+
+}
+
+.g_wrapper {
+    position: relative;
+    width: 960px;
+    height: 645px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    
+    .header {
+        height: 61px;
+        line-height: 61px;
+        background: url(../image/icon_header_bac.jpg) repeat;
+        /* background: #006bcf; */
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        overflow: hidden;
+
+        img {
+            vertical-align: middle;
+        }
+
+        .logo {
+            display: inline-block;
+            margin-left: 20px;
+        }
+
+        &_right {
+            float: right;
+            margin-right: 35px;
+            color: #fff;
+            font-size: 14px;
+
+            img {
+                display: inline-block;
+                width: 34px;
+                height: 34px;
+                /* border: 2px solid #fff;
+                background: #000; */
+                margin-right: 15px;
+                border-radius: 50%;                
+                overflow: hidden;
+            }
+
+            span {
+
+                &.say_hello {
+                    margin-right: 5px;
+                }                
+            }
+            
+        }
+    }
+
+    .main_wrp {
+
+        .tabs {
+
+            ul {
+
+                li {
+                    float: left;
+                    width: 191px;
+                    height: 63px;
+                    line-height: 63px;
+                    font-size: 16px;
+                    color: #333;
+                    text-align: center;
+                    background: #e7e7e7;
+                    border-bottom: 1px solid #dddddd;
+                    border-left: 1px solid #e1e1e1;
+                    cursor: default;
+
+                    &.active {
+                        background: #fff;
+                        border-bottom: 1px solid #fff;
+                        font-size: 20px;
+                        color: #006bcf;
+                    }
+
+                    &:first-child {
+                        border-left: 0;
+                    }
+                }
+            }
+        }
+
+        .tabs_block_wrp {
+
+            .tabs_block {
+
+            }
+        }
+    }
+}

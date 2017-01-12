@@ -1,0 +1,85 @@
+<div class="header">
+    <div class="logo">
+        <a href="/index.html"><img src="../../app/image/logo_blue.png" alt=""></a>
+    </div>
+    <div class="nav">
+        <div class="fr clearfix">
+            <div class="nav_list fl">
+                <a href="/index.html">首页</a>
+                <a href="/dist/operation/modal.html">模板库</a>
+                <div class="management">
+                	<span class="active">管理</span>
+					<div class="management_panel">
+						<p><a href="#">广告管理</a></p>
+						<p><a href="#">新增模板</a></p>
+						<p><a href="#">评论管理</a></p>
+					</div>
+                </div>             
+            </div>
+            <div class="search_panel fl">
+                <input id="search_input" class="" type="text">
+                <em class="search_icon"></em>
+            </div>
+            <div class="personal_center logout_statu fl">
+                <div class="avatar_bac new_mes">
+                    <img src="../../app/image/icon_avatar.png" alt="">                                               
+                </div>                  
+                <i class="icon_arrow"></i>
+                <div class="personal_center_wrapper login_personal_panel">
+                    <div class="personal_mes clearfix">
+                        <div class="avatar_big fl">
+                            <img src="../../app/image/icon_avatar_big.png" alt="">
+                        </div>                          
+                        <div class="personal_mes_text fl">
+                            <p><span class="name">李国明</span><span class="job">运营人员</span></p>
+                            <p><span class="department">佛山-互联网部</span></p>
+                        </div>
+                    </div>
+                    <div class="personal_operation">
+                        <p><a href="#">我的消息<em>（2）</em></a></p>
+                        <p><a href="#">我的设置</a></p>
+                        <p><a href="#">注销</a></p>
+                    </div>
+                </div> 
+                <div class="personal_center_wrapper logout_personal_panel">
+                    <div class="personal_mes clearfix">
+                        <a class="login_link" href="#">立即登录</a>
+                        <p>没有账号？<a href="#">立即注册</a></p>
+                    </div>
+                    <div class="personal_operation">
+                        <p><a href="#">我的消息</a></p>
+                        <p><a href="#">我的设置</a></p>
+                        <p><a href="#">注销</a></p>
+                    </div>
+                </div>                                     
+            </div>  
+        </div>  
+    </div>
+    <script>
+    	$(function(){
+    		$('.avatar_bac').hover(function(){
+                if($('.personal_center').hasClass('login_statu')){
+                    $('.login_personal_panel').show();
+                }else if($('.personal_center').hasClass('logout_statu')) {
+                    $('.logout_personal_panel').show();
+                     $('.avatar_bac img').attr('src','../../app/image/icon_avatar_null.png');
+                }				
+			},function(){
+				$('.personal_center_wrapper').hide();
+			});
+
+			$('.personal_center_wrapper').hover(function(){
+				$(this).show();
+			},function(){
+				$(this).hide();
+			});
+
+            // 搜索效果
+            $('.search_icon').hover(function(){                
+                $('.header .nav_list').animate({"marginRight": "20px"},function(){
+                    $('#search_input').addClass('active');
+                });
+            });
+    	});
+    </script>
+</div>
