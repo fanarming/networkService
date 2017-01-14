@@ -21,10 +21,12 @@ time, mark, audio, video {
     list-style-type: none;
 }
 html, body {
-    font-family: Arial,"微软雅黑";
+    font-family: 微软雅黑;
 }
 body {
-    line-height:1;    
+    line-height:1;
+    height: 1000px;
+    background: rgba(0,0,0,.6);    
 }
 
 :focus {

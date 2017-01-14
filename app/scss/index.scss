@@ -4,13 +4,16 @@ body {
 
 }
 
+.line_height30 {
+    line-height: 30px;
+}
+
 .g_wrapper {
     position: relative;
     width: 960px;
     height: 645px;
     background: #fff;
-    border-radius: 10px;
-    overflow: hidden;
+    border-radius: 10px;    
     
     .header {
         height: 61px;
@@ -81,6 +84,7 @@ body {
                         border-bottom: 1px solid #fff;
                         font-size: 20px;
                         color: #006bcf;
+                        font-weight: bold;
                     }
 
                     &:first-child {
@@ -88,13 +92,914 @@ body {
                     }
                 }
             }
+        }        
+    }
+
+    .close_win {
+        position: absolute;
+        top: -15px;
+        right: -15px;
+        width: 31px;
+        height: 31px;
+        background: url(../image/closed.png) no-repeat;
+
+        a {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.tabs_block_wrp {
+    height: 520px;
+
+    .tabs_block {
+        position: relative;
+        height: 100%;
+    }
+
+    .index_wrp {
+        padding: 40px 66px;
+
+        &_title {
+            margin-bottom: 35px;
+            font-size: 20px;
+            color: #666666;
+            font-weight: bold;
         }
 
-        .tabs_block_wrp {
+        &_left {
+            float: left;
+            padding-right: 45px;
+            border-right: 1px solid #e8e8e8;                    
 
-            .tabs_block {
+            i,span {
+                vertical-align: middle;
+            }
 
+            .upload_wrp {
+                padding-left: 14px;
+                padding-top: 35px;
+                margin-bottom: 25px;
+                line-height: 45px;
+
+                .icon_upload_speed {
+                    display: inline-block;
+                    margin-right: 20px;
+                    width: 32px;
+                    height: 45px;
+                    background: url(../image/up.png) no-repeat;
+                }
+
+                span {
+                    font-weight: bold;
+                    font-size: 24px;
+                    color: #006bcf;
+                    font-family: 微软雅黑;
+                }
+            }
+
+            .download_wrp {        
+                padding-left: 14px;               
+                margin-bottom: 85px;
+                line-height: 45px;
+
+                .icon_download_speed {
+                    display: inline-block;
+                    margin-right: 20px;
+                    width: 32px;
+                    height: 45px;
+                    background: url(../image/down.png) no-repeat;
+                }
+
+                span {
+                    font-weight: bold;
+                    font-size: 24px;
+                    color: #006bcf;
+                    font-family: 微软雅黑;
+                }
+            }
+
+            .speed_test_btn {
+                margin: 0 auto;
+                display: block;
+                width: 92px;
+                height: 40px;
+                line-height: 40px;
+                background: #0ec048;
+                border-radius: 10px;
+                color: #fff;
+                font-size: 16px;
+                text-align: center;
             }
         }
+
+        &_right {
+            float: left;
+
+            .index_info_item {
+                float: left;
+                margin-left: 55px;
+                max-width: 162px;
+                min-width: 134px;
+
+                .info_item_cont {                            
+                    padding-top: 152px;
+                    margin-bottom: 43px;
+
+                    p {
+                        text-align: center;
+                        font-family: 微软雅黑;
+                    }
+
+                    .name {
+                        margin-bottom: 13px;
+                        font-size: 16px;
+                        color: #999999;
+                    }
+
+                    .name_val {
+                        font-size: 18px;
+                        color: #000;
+                        font-weight: bold;
+                    }
+
+                }
+
+                a {
+                    margin: 0 auto;
+                    display: block;
+                    width: 92px;
+                    height: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                    color: #fff;
+                    background: #006bcf;
+                    border-radius: 10px;
+                }
+
+                .packages_speed_bac {
+                    background: url(../image/test_speed_01.png) center 0 no-repeat;
+                    background-size: 134px auto;
+                }
+
+                .account_bac {
+                    background: url(../image/person_icon.png) center 0 no-repeat;
+                    background-size: 134px 133px;
+                }
+
+                .surfing_time_bac {
+                    background: url(../image/test_speed_02.png) center 0 no-repeat;
+                    background-size: 134px 133px;
+                }
+            }
+        }
+
+        &_bottom {
+            margin-top: 67px;
+            text-align: right;
+
+            a {
+                color: #999;
+                font-size: 14px;
+            }
+        }
+    }
+
+
+}
+
+.g_modal_wrp {
+    position: absolute;
+    top: 14px;
+    left: 16px;
+    bottom: 14px;
+    right: 16px;
+    z-index: 9;
+    background: #fff;
+    border-radius: 10px;
+    /* padding: 14px 16px; */
+
+    .g_modal_container {
+        
+        width: 100%;
+        height: 100%;
+        box-shadow: 0 0 10px #aaa;
+        border-radius: 10px;
+
+        .close_btn {
+            position: absolute;
+            display: block;
+            width: 17px;
+            height: 17px;
+            right: 15px;
+            top: 15px;
+            background: url(../image/closed2.png) 0 no-repeat;
+        }
+    } 
+}
+
+/*成长轨迹*/
+.grow_history {
+
+    &_head {            
+        padding-top: 30px;
+        padding-left: 55px;
+        margin-bottom: 60px;
+        font-size: 16px;
+        color: #666;
+        height: 20px;
+        line-height: 20px;
+        
+        .icon_clock {
+            margin-left: 195px;
+            display: inline-block;                
+            background: url(../image/clock.png) 0 center no-repeat;
+            background-size: 20px 20px;
+            text-indent: 38px; 
+            font-family: 微软雅黑;
+        }            
+    }
+
+    &_cont {
+        padding-left: 70px;
+
+        .cont_list {
+            float: left;
+            width: 157px;
+            text-align: center;
+
+            ul {
+
+                li { 
+
+                    .grow_bac_01 {
+                        display: block;
+                        width: 157px;
+                        height: 136px;
+                        background: url(../image/speed_icon_01.png) center 0 no-repeat;
+                    }
+
+                    .grow_bac_02 {
+                        display: block;
+                        width: 157px;
+                        height: 136px;
+                        background: url(../image/speed_icon_02.png) center 0 no-repeat;
+                    }
+
+                    .grow_bac_03 {
+                        display: block;
+                        width: 157px;
+                        height: 136px;
+                        background: url(../image/speed_icon_03.png) center 0 no-repeat;
+                    }
+
+                    .grow_bac_04 {
+                        display: block;
+                        width: 157px;
+                        height: 136px;
+                        background: url(../image/speed_icon_04.png) center 0 no-repeat;
+                    }
+
+                    .grow_bac_05 {
+                        display: block;
+                        width: 157px;
+                        height: 136px;
+                        background: url(../image/speed_icon_06.png) center 0 no-repeat;
+                    }
+
+                    .icon_grow_01 {
+                        display: block;
+                        width: 157px;
+                        height: 60px;
+                        background: url(../image/grow_01.jpg) 0 center no-repeat;
+                    }
+
+                    .icon_grow_02 {
+                        display: block;
+                        width: 157px;
+                        height: 60px;
+                        background: url(../image/grow_02.jpg) 0 center no-repeat;
+                    }
+
+                    .icon_grow_03 {
+                        display: block;
+                        width: 157px;
+                        height: 60px;
+                        background: url(../image/grow_03.jpg) 0 center no-repeat;
+                    }
+
+                    .speed {
+                        font-family: 微软雅黑;
+                        font-size: 20px;
+                        color: #999;
+                    }
+
+                    .date {                            
+                        font-family: 微软雅黑;
+                        font-size: 20px;
+                        color: #006bcf;
+                    }
+
+                    .des {
+                        margin: 10px auto 0;
+                        width: 120px;
+                        line-height: 20px;
+                        font-size: 12px;
+                        color: #666666;
+                        text-align: left;
+                    }
+
+                    a {
+                        display: block;
+                        margin: 0 auto;
+                        width: 92px;
+                        height: 30px;
+                        line-height: 30px;
+                        text-align: center;
+                        color: #fff;
+                        font-size: 16px;
+                        background: #006bcf;
+                        border-radius: 10px;
+                    }
+                }
+
+                &.active {
+
+                    li { 
+
+                        .grow_bac_01 {
+                            display: block;
+                            width: 157px;
+                            height: 136px;
+                            background: url(../image/speed_act_01.png) center 0 no-repeat;
+                        }
+
+                        .grow_bac_02 {
+                            display: block;
+                            width: 157px;
+                            height: 136px;
+                            background: url(../image/speed_act_02.png) center 0 no-repeat;
+                        }
+
+                        .grow_bac_03 {
+                            display: block;
+                            width: 157px;
+                            height: 136px;
+                            background: url(../image/speed_act_03.png) center 0 no-repeat;
+                        }
+
+                        .grow_bac_04 {
+                            display: block;
+                            width: 157px;
+                            height: 136px;
+                            background: url(../image/speed_act_04.png) center 0 no-repeat;
+                        }
+
+                        .grow_bac_05 {
+                            display: block;
+                            width: 157px;
+                            height: 136px;
+                            background: url(../image/speed_act_06.png) center 0 no-repeat;
+                        }                            
+
+                        .speed {
+                            font-family: 微软雅黑;
+                            font-size: 20px;
+                            color: #ff6600;
+                        }                       
+                    }
+                }
+            }
+        }
+    }
+} 
+
+/*测速弹窗*/
+.speed_test_wrp {
+
+    .speed_test {
+
+        &_loading {
+            padding-top: 90px; 
+            text-align: center;
+
+            p {
+                margin-top: 30px;
+                font-size: 24px;
+                color: #333;
+            }
+        }
+
+        &_cont {
+            text-align: center;
+
+            .title {                
+                padding-top: 40px;
+                padding-left: 47px;
+                font-size: 20px;
+                color: 666;
+                text-align: left;
+                font-weight: bold;
+            }
+
+            .test_result {
+
+                .speed_num {
+                    margin-right: 17px;
+                    font-size: 36px;
+                    color: #666;
+                    font-family: 微软雅黑;
+                    vertical-align: middle;
+                }
+
+                .speed_des {
+                    font-size: 36px;
+                    color: #ff6600;
+                    vertical-align: middle;
+                }
+            }
+
+            .speed_graphic {
+                position: relative;
+                margin-top: 100px;
+
+                .speed_line_wrp {
+                    position: absolute;
+                    width: 785px;
+                    height: 6px;
+                    top: 10px;
+                    left: 50%;
+                    margin-left: -392px;
+                    background: #b8b8b8;
+
+                    &:after {
+                        position: absolute;
+                        content: "";
+                        right: 51px;
+                        top: -76px;
+                        width: 53px;
+                        height: 53px;
+                        background: url(../image/speed_small_02.png) no-repeat;
+                    }
+
+                    .speed_percent {  
+                        position: relative;                      
+                        height: 100%;
+                        background: #006bcf;
+
+                        &:after {
+                            position: absolute;
+                            content: "";
+                            right: -24px;
+                            top: -76px;
+                            width: 49px;
+                            height: 76px;
+                            background: url(../image/icon_speed_pos.png) no-repeat;
+                        }
+                    }
+                }
+            }
+
+            .speed_cont_wrp {
+                padding-left: 72px;
+                margin-bottom: 50px;
+            }
+
+            .analysis {
+                margin-bottom: 10px;
+                font-size: 18px;
+                color: #999;
+
+                strong {
+                    font-family: 微软雅黑;
+                    font-size: 30px;
+                    color: #ff6600;
+                }
+            }
+
+            .speed_up_btn {
+                display: block;
+                margin: 20px auto 0;
+                width: 302px;
+                height: 60px;
+                line-height: 60px;
+                border-radius: 10px;
+                font-size: 30px;
+                text-align: center;
+                background: #006bcf;
+                color: #fff;
+            }
+
+            .speed_cont_list {
+                position: relative;
+                float: left;
+                width: 157px;
+
+                .icon_pos {
+                    display: block;
+                    width: 157px;
+                    height: 30px;
+                    background: url(../image/no_active_ball.png) center 0 no-repeat;
+                }
+
+                p {
+                    font-size: 20px;
+                    color: #666;
+                    line-height: 25px;
+                }
+            }
+
+            .speed_cont_list_active {
+
+                .icon_pos {
+                    display: block;
+                    width: 157px;
+                    height: 30px;
+                    background: url(../image/active_ball.png) center 0 no-repeat;
+                }
+
+                p {
+                    font-size: 20px;
+                    color: #006bcf;
+                    line-height: 25px;
+                }
+            }
+        }
+    }
+}
+
+/*续约窗口*/
+.user_renew_wrp,.user_no_renew_wrp,.mix_user_renew_wrp {
+    
+    .package {
+
+        &_name {
+            padding-top: 42px;
+            padding-left: 50px;
+            margin-bottom: 25px;
+            font-size: 16px;
+            color: #666;
+
+            .name {
+                margin-left: 80px;
+                font-family: 微软雅黑;
+                font-size: 16px;
+                color: #000;
+                font-weight: bold;
+            }
+        }
+
+        &_date {
+            padding-left: 50px;
+            font-size: 16px;
+            color: #666;
+
+            .date {
+                margin-left: 80px;
+                font-family: 微软雅黑;
+                font-size: 16px;
+                color: #000;
+                font-weight: bold;
+            }
+
+            .offline_date {
+                margin-left: 48px;
+            }
+        }
+
+        &_cont {
+            margin-top: 50px;
+
+            &_list {
+                float: left;
+                width: 33.3%;
+                text-align: center;
+
+                li {
+                    width: 100%;
+
+                    .icon_bac_01 {
+                        display: block;
+                        width: 100%;
+                        height: 126px;
+                        background: url(../image/package_icon_01.png) center 0 no-repeat;
+                    }
+
+                    .icon_bac_02 {
+                        display: block;
+                        width: 100%;
+                        height: 126px;
+                        background: url(../image/package_icon_02.png) center 0 no-repeat;
+                    }
+
+                    .icon_bac_03 {
+                        display: block;
+                        width: 100%;
+                        height: 126px;
+                        background: url(../image/package_icon_03.png) center 0 no-repeat;
+                    }
+
+                    &.name {
+                        margin-top: 20px;
+                        font-size: 20px;
+                        color: #000;
+                    }
+
+                    &.des {
+                        margin-top: 8px;
+                        font-size: 16px;
+                        color: #999;
+                    }
+
+                    a {
+                        display: inline-block;
+                        margin-top: 13px;
+                        width: 92px;
+                        height: 40px;
+                        line-height: 40px;
+                        color: #fff;
+                        text-align: center;
+                        border-radius: 10px;
+                        background: #006bcf;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+    .no_renew_cont {
+        margin-top: 22px;
+    }
+
+    .offline_tip {
+        padding-left: 50px;
+        margin-top: 35px;        
+        font-size: 42px;
+        color: #333;
+        line-height: 50px;
+
+        .last_date {
+            color: #ff6600;            
+        }
+
+        a {
+            display: inline-block;
+            margin-left: 30px;
+            width: 192px;
+            height: 50px;
+            line-height: 50px;
+            color: #fff;
+            text-align: center;
+            border-radius: 10px;
+            background: #006bcf;
+            font-size: 24px;
+            vertical-align: middle;
+        }
+    }
+}
+
+.mix_user_renew_wrp {
+
+    .package_cont {
+        padding-left: 98px;
+        margin-top: 75px;
+
+        &_list {
+            width: 405px;
+        }
+
+        .pic {
+            width: 126px;
+            height: 126px;
+        }
+
+        .package_des {
+            margin-left: 20px;
+            width: 250px;
+            text-align: left;
+
+            .package_name  {
+                margin-bottom: 14px;
+                padding: 0;
+                font-size: 20px;
+                font-weight: bold;
+                color: #000;
+            }
+
+            p {
+                font-size: 16px;
+                color: #333;
+                line-height: 30px;
+                font-family: 微软雅黑;
+
+                span {
+                    margin-left: 29px;
+                    color: #999;
+                }
+            }
+        }
+    }
+}
+
+.personal_setting_wrp {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.8);
+    z-index: 99;
+
+    .personal_setting_cont {
+        position: absolute;
+        top: 98px;
+        left: 15px;
+        right: 15px;
+        bottom: 50px;
+        background: #fff;
+        border-radius: 10px;
+
+        .close_personal_btn {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            width: 17px;
+            height: 17px;
+            background: url(../image/closed2.png) no-repeat;
+        }
+
+        .title {
+            padding-left: 47px;
+            padding-top: 27px;
+            font-size: 14px;
+            color: #666; 
+        }
+
+        .user_info {
+            margin-top: 20px;
+            text-align: center;
+
+            .avatar {
+                margin-bottom: 20px;
+
+                img {
+                    width: 148px;
+                    height: 148px; 
+                    border-radius: 50%;                    
+                }               
+            }
+
+            .user_name {
+                font-size: 20px;
+                color: #000;
+                line-height: 36px;
+            }
+
+            .user_des,.online_time {
+                line-height: 36px;
+                font-size: 16px;
+                color: #666;
+            }
+
+            .info_edit_btn {
+                margin-top: 15px;
+                display: inline-block;
+                width: 182px;
+                height: 50px;
+                line-height: 50px;
+                color: #fff;
+                font-size: 24px;
+                text-align: center;
+                background: #006bcf;
+                border-radius: 8px;
+            }
+
+            &_editing {
+                margin-top: 20px;
+                text-align: center;
+
+                .user_name {
+                    margin-top: 20px;                    
+
+                    input {
+                        margin-left: 25px;
+                        width: 206px;
+                        height: 40px;
+                        line-height: 40px;
+                        border: 1px solid #ccc;
+                        border-radius: 5px;
+                        font-size: 16px;
+                        text-indent: 20px;
+                    }
+                }
+
+                .user_des {
+                    margin-top: 20px;  
+                    margin-bottom: 24px;
+
+                    span {
+                        position: relative;
+                        top: -82px;
+                    }                  
+
+                    textarea {
+                        margin-left: 25px;
+                        width: 204px;
+                        height: 97px;
+                        border: 1px solid #ccc;
+                        overflow-y: auto;
+                        border-radius: 5px;
+                        resize: none;
+                        text-indent: 20px;
+                        font-size: 16px;
+                        line-height: 20px;
+                    }
+                }
+
+                .btns {
+                    padding-left: 62px;
+
+                    a {
+                        display: inline-block;
+                        width: 92px;
+                        height: 40px;
+                        line-height: 40px;
+                        text-align: center;
+                        font-size: 16px;
+                        border-radius: 5px;
+
+                        &.edit_cancel_btn {
+                            color: #999;
+                            background: #e7e7e7;
+                            border: 1px solid #ccc;
+                        }
+
+                        &.edit_confirm_btn {
+                            margin-left: 30px;
+                            background: #006bcf;
+                            color: #fff;
+                            border: 1px solid #006bcf;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.surfing_wrp {
+    
+    .block_01 {
+        padding-left: 45px;
+        padding-top: 25px;
+
+        .avatar {
+            margin-right: 22px;
+
+            img {
+                width: 74px;
+                height: 74px;
+                border-radius: 50%;
+            }
+        }
+
+        .des {
+
+            .name {
+                line-height: 36px;
+                font-size: 20px;
+                font-weight: bold;
+                color: #000;
+            }
+
+            .tips {
+                line-height: 36px;
+                color: #666;
+                font-size: 14px;
+
+                .share_btn {
+                    margin-left: 40px;
+                    display: inline-block;
+                    width: 64px;
+                    height: 28px;
+                    line-height: 28px;
+                    text-align: center;
+                    color: #fff;
+                    font-size: 16px;
+                    background: #0ec048;
+                    border-radius: 5px;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+
+    .block_02 {
+        margin-top: 48px;
+
+        
     }
 }
