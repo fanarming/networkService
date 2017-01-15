@@ -278,7 +278,7 @@
 								</div>
 							</div>
 							<div class="block_02">
-								<div id="container" style="width:765px;height:320px"></div>
+								<div id="surfing_graphi_wrp" style="width:765px;height:320px"></div>
 							</div>
 						</div>
 					</div>				
@@ -370,13 +370,15 @@
 					});
 
 					/*上网时长*/
-					$('#container').highcharts({
+					$('#surfing_graphi_wrp').highcharts({
 				        chart: {
-				            type: 'column',
-				            backgroundColor:null
+				            type: 'column'
 				        },
 				        title: {
 				            text: '本周平均一天上网的时间分布(分钟)'
+				        },
+				        credits: {
+				        	enabled: false
 				        },
 				        xAxis: {
 				            categories: [
@@ -384,11 +386,13 @@
 				                '10:00-19:00',
 				                '19:00-23:00',
 				                '23:00-03:00'
-				            ],
-				            crosshair: true
+				            ]
 				        },
 				        yAxis: {
-				            min: 0
+				            min: 0,
+				            title: {
+				            	text: null
+				            }
 				        },
 				        tooltip: {
 				            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
