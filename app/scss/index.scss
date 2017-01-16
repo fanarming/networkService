@@ -21,7 +21,7 @@ body {
         background: url(../image/icon_header_bac.jpg) repeat;
         /* background: #006bcf; */
         border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
+        border-top-right-radius: 10px; 
         overflow: hidden;
 
         img {
@@ -107,6 +107,24 @@ body {
             display: block;
             width: 100%;
             height: 100%;
+        }
+    }
+
+    .gl_loading {
+        position: absolute;
+        top: 125px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        background: #fff;
+        padding-top: 170px; 
+        z-index: 999;      
+
+        p {
+            margin-top: 30px;
+            font-size: 16px;
+            color: #000;
         }
     }
 }
@@ -274,8 +292,8 @@ body {
     position: absolute;
     top: 14px;
     left: 16px;
-    bottom: 14px;
-    right: 16px;
+    width: 928px;
+    height: 492px;
     z-index: 9;
     background: #fff;
     border-radius: 10px;
@@ -950,7 +968,18 @@ body {
     }
 }
 
-.surfing_wrp {
+.surfing_wrp,.surfing_like_wrp {
+
+    .test_loading {
+        padding-top: 128px; 
+        text-align: center;
+
+        p {
+            margin-top: 40px;
+            font-size: 24px;
+            color: #333;
+        }
+    }
     
     .block_01 {
         padding-left: 45px;
@@ -973,6 +1002,31 @@ body {
                 font-size: 20px;
                 font-weight: bold;
                 color: #000;
+
+                .title {
+                    float: left;
+                }
+
+                .score_wrp {
+                    float: left;
+                    margin-left: 15px;
+
+                    span {
+                        display: inline-block;
+                        width: 20px;
+                        height: 19px;
+                        margin-right: 3px;
+                        vertical-align: middle;                        
+
+                        &.no_score {                            
+                            background: url(../image/icon_star_gray.png) no-repeat;
+                        }
+
+                        &.scored {                           
+                            background: url(../image/icon_star_orange.png) no-repeat;
+                        }
+                    }
+                }
             }
 
             .tips {
@@ -1002,6 +1056,64 @@ body {
 
         #surfing_graphi_wrp {
             margin: 0 auto;  
+            width: 765px;
+            height: 320px;
+        }
+    }
+}
+
+#surfing_graphi_wrp_left {
+    margin-left: 43px;  
+    width: 487px;
+    height: 320px;
+}
+
+#surfing_graphi_wrp_right {
+    width: 350px;
+    height: 320px;
+    margin-left: 20px;
+}
+
+/*智能服务*/
+#block2 {
+    
+    .index_wrp {
+        padding-top: 110px;
+        padding-left: 190px;
+
+        .item {
+            float: left;
+            margin-right: 200px;
+            text-align: center;
+
+            i {
+                display: block;
+                margin-bottom: 45px;
+
+                &.speed_test_bac {
+                    width: 191px;
+                    height: 183px;
+                    background: url(../image/test_speed_01.png) center 0 no-repeat;
+                }
+
+                &.surfing_test_bac {
+                    width: 187px;
+                    height: 183px;
+                    background: url(../image/test_speed_02.png) center 0 no-repeat;
+                }
+            }
+
+            a {
+                display: inline-block;
+                width: 192px;
+                height: 50px;
+                line-height: 50px;
+                text-align: center;
+                color: #fff;
+                font-size: 24px;
+                background: #006bcf;
+                border-radius: 5px;
+            }
         }
     }
 }
