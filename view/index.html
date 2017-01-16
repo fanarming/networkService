@@ -5,9 +5,13 @@
 	<title>电信宽带服务窗</title>	
 	<link rel="stylesheet" href="../app/css/index.css">
 	<script src="../app/js/jquery.js"></script>
+	<script src="../app/js/highcharts.js"></script>
+	<script src="../app/js/html2canvas.js"></script>
+	<script src="../app/js/canvas2image.js"></script>
 </head>
 <body>	  
 	<div class="g_wrapper">
+		<div class="close_win"><a class="close_win_btn" href="#"></a></div>
 		<div class="header">  
 			<a class="logo" href="javascript:void(0)"><img src="../app/image/fwc_logo.jpg" alt=""></a>
 			<div class="header_right">
@@ -18,20 +22,408 @@
 		<div class="main_wrp">
 			<div class="tabs">
 				<ul class="clearfix">
-					<li class="nav_btn" data-show="#block1">我的宽带</li>
+					<li class="nav_btn active" data-show="#block1">我的宽带</li>
 					<li class="nav_btn" data-show="#block2">智能服务</li>
-					<li class="nav_btn active" data-show="#block3">尊享礼券</li>
+					<li class="nav_btn" data-show="#block3">尊享礼券</li>
 					<li class="nav_btn" data-show="#block4">业务办理</li>
 					<li class="nav_btn" data-show="#block5">我的账单</li>
 				</ul>
 			</div>
 			<div class="tabs_block_wrp">
-				<div id="block1" class="tabs_block" style="display:none;">1</div>
-				<div id="block2" class="tabs_block" style="display:none;">2</div>
-				<div id="block3" class="tabs_block active">
+				<div id="block1" class="tabs_block active">
+					<div class="index_wrp">
+						<div class="index_wrp_title">实际使用速度</div>
+						<div class="clearfix">
+							<div class="index_wrp_left">
+								<div class="upload_wrp"><i class="icon_upload_speed"></i><span class="upload_speed">250 KB/秒</span></div>
+								<div class="download_wrp"><i class="icon_download_speed"></i><span class="download_speed">5.0 MB/秒</span></div>
+								<a class="speed_test_btn" href="#">点击测试</a>
+							</div>
+							<div class="index_wrp_right">
+								<div class="index_info_item">
+									<div class="info_item_cont packages_speed_bac">
+										<p class="name">套餐速率</p>
+										<p class="name_val packages_speed">20M</p>
+									</div>
+									<a href="#" class="see_packges">查看套餐</a>
+								</div>
+								<div class="index_info_item">
+									<div class="info_item_cont account_bac">
+										<p class="name">宽带账号</p>
+										<p class="name_val account">2891882@gd.163</p>
+									</div>
+									<a href="#" class="see_bill">查看账单</a>
+								</div>
+								<div class="index_info_item">
+									<div class="info_item_cont surfing_time_bac">
+										<p class="name">本周已上网</p>
+										<p class="name_val surfing_time">89小时</p>
+									</div>
+									<a href="#" class="see_usetime">查看时长</a>
+								</div>
+							</div>
+						</div>						
+						<div class="index_wrp_bottom"><a href="#" class="my_groupup">我的成长轨迹>></a></div>
+					</div>
+					<!-- 我的成长轨迹Modal -->
+					<div class="grow_history_wrp g_modal_wrp hide">
+						<div class="grow_history_container g_modal_container">
+							<a class="close_btn" href="#"></a>
+							<div class="grow_history_head">
+								等级<i class="icon_clock">1029天</i>
+							</div>
+							<div class="grow_history_cont clearfix">
+								<div class="cont_list">
+									<ul class="active">
+										<li><i class="grow_bac_01"></i></li>
+										<li><span class="speed">12M以下</span></li>
+										<li><i class="icon_grow_01"></i></li>
+										<li class="line_height30"><span class="date">2013-3-2</span></li>
+										<li><p class="des">于千里之外互通音讯，于方寸屏幕饱览世界，是你与我一起开阔眼界 。</p></li>
+									</ul>
+								</div>
+								<div class="cont_list">
+									<ul class="active">
+										<li><i class="grow_bac_02"></i></li>
+										<li><span class="speed">20M</span></li>
+										<li><i class="icon_grow_01"></i></li>
+										<li class="line_height30"><span class="date">2014-3-2</span></li>
+										<li><p class="des">一起畅快游戏，一起熬夜煲剧，一起秒下资源种子……成长的每天每夜，都是你在身旁。</p></li>
+									</ul>
+								</div>
+								<div class="cont_list">
+									<ul class="active">
+										<li><i class="grow_bac_03"></i></li>
+										<li><span class="speed">50M</span></li>
+										<li><i class="icon_grow_02"></i></li>
+										<li class="line_height30"><span class="date">2015-3-2</span></li>
+										<li><p class="des">不用等待的轻快，不用缓冲的自由，因你时间更多了，效率更高了</p></li>
+									</ul>
+								</div>
+								<div class="cont_list">
+									<ul>
+										<li><i class="grow_bac_04"></i></li>
+										<li><span class="speed">100M</span></li>
+										<li><i class="icon_grow_03"></i></li>
+										<li class="line_height30"><a href="#">马上进阶</a></li>
+										<li><p class="des">你从未见过的进度条加载速度，极速新生活，岂是说说而已？</p></li>
+									</ul>
+								</div>
+								<div class="cont_list">
+									<ul>
+										<li><i class="grow_bac_05"></i></li>
+										<li><span class="speed">1000M</span></li>
+										<li><i class="icon_grow_03"></i></li>
+										<li class="line_height30"><a href="#">马上进阶</a></li>
+										<li><p class="des">告诉你一个秘密，你是我们千万用户中幸运的一员。千兆光纤已覆盖到你的小区，何不尊贵体验一番？</p></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 网速测速Modal -->
+					<div class="speed_test_wrp g_modal_wrp hide">
+						<div class="g_modal_container">
+							<a class="close_btn" href="#"></a>
+							<div class="speed_test_loading">
+								<img src="../app/image/speed_test_loading.png" alt="">
+								<p>正在测速...</p>
+							</div>
+							<div class="speed_test_cont hide">
+								<p class="title">测试结果</p>
+								<p class="test_result"><span class="speed_num">19.98Mb</span> <span class="speed_des">慢</span></p>
+								<div class="speed_graphic">
+									<div class="speed_line_wrp">
+										<div class="speed_percent" style="width:27%"></div>
+									</div>
+									<div class="speed_cont_wrp clearfix">
+										<div class="speed_cont_list speed_cont_list_active">
+											<i class="icon_pos"></i>
+											<p>慢</p>
+											<p>12M以下</p>
+										</div>
+										<div class="speed_cont_list">
+											<i class="icon_pos"></i>
+											<p>较慢</p>
+											<p>20M</p>
+										</div>
+										<div class="speed_cont_list">
+											<i class="icon_pos"></i>
+											<p>中</p>
+											<p>50M</p>
+										</div>
+										<div class="speed_cont_list">
+											<i class="icon_pos"></i>
+											<p>快</p>
+											<p>100M</p>
+										</div>
+										<div class="speed_cont_list">
+											<i class="icon_pos"></i>
+											<p>极快</p>
+											<p>1000M</p>
+										</div>
+									</div>
+									<p class="analysis">您已领先了<strong>40%</strong>的用户，还有<strong>60%</strong>的用户驾驶火箭跑到了您的前面</p>		
+									<p class="analysis">赶紧去超越他们~</p>	
+									<a class="speed_up_btn" href="#">我要提速</a>						
+								</div>								
+							</div>
+						</div>
+					</div>
+					<!-- 包年用户非续约期Modal -->
+					<div class="user_renew_wrp g_modal_wrp hide">
+						<div class="g_modal_container">
+							<a class="close_btn" href="#"></a>
+							<div class="package_name">套餐名称<span class="name">20M光纤单宽带 （包月）</span></div>
+							<div class="package_date">开通时间<span class="date">2017年1月30日</span></div>
+							<div class="package_cont clearfix">
+								<div class="package_cont_list">
+									<ul>
+										<li><i class="icon_bac_01"></i></li>
+										<li class="name">双百兆</li>
+										<li class="des">升级办理本特色业务</li>
+										<li><a href="#">开通</a></li>
+									</ul>
+								</div>
+								<div class="package_cont_list">
+									<ul>
+										<li><i class="icon_bac_02"></i></li>
+										<li class="name">宽带+手机</li>
+										<li class="des">升级办理本特色业务</li>
+										<li><a href="#">开通</a></li>
+									</ul>
+								</div>
+								<div class="package_cont_list">
+									<ul>
+										<li><i class="icon_bac_03"></i></li>
+										<li class="name">宽带+IPTV</li>
+										<li class="des">升级办理本特色业务</li>
+										<li><a href="#">开通</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 包年用户续约期Modal -->
+					<div class="user_no_renew_wrp g_modal_wrp hide">
+						<div class="g_modal_container">
+							<a class="close_btn" href="#"></a>
+							<div class="package_name">套餐名称<span class="name">20M光纤单宽带 （包月）</span></div>
+							<div class="package_date">套餐到期时间<span class="date offline_date">2017年1月30日</span></div>
+							<div class="offline_tip">您的套餐仅剩<span class="last_date">30天</span><a href="#" class="renew_it">我要续约</a></div>
+							<div class="package_cont no_renew_cont clearfix">
+								<div class="package_cont_list">
+									<ul>
+										<li><i class="icon_bac_01"></i></li>
+										<li class="name">双百兆</li>
+										<li class="des">升级办理本特色业务</li>
+										<li><a href="#">开通</a></li>
+									</ul>
+								</div>
+								<div class="package_cont_list">
+									<ul>
+										<li><i class="icon_bac_02"></i></li>
+										<li class="name">宽带+手机</li>
+										<li class="des">升级办理本特色业务</li>
+										<li><a href="#">开通</a></li>
+									</ul>
+								</div>
+								<div class="package_cont_list">
+									<ul>
+										<li><i class="icon_bac_03"></i></li>
+										<li class="name">宽带+IPTV</li>
+										<li class="des">升级办理本特色业务</li>
+										<li><a href="#">开通</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 融合包年用户续约期Modal -->
+					<div class="mix_user_renew_wrp g_modal_wrp hide">
+						<div class="g_modal_container">
+							<a class="close_btn" href="#"></a>
+							<div class="package_name">套餐名称<span class="name">20M光纤单宽带 （包月）</span></div>
+							<div class="package_date">套餐到期时间<span class="date offline_date">2017年1月30日</span></div>
+							<div class="offline_tip">您的套餐仅剩<span class="last_date">30天</span><a href="#" class="renew_it">我要续约</a></div>
+							<div class="package_cont no_renew_cont clearfix">								
+								<div class="package_cont_list">
+									<div class="pic fl"><img src="../app/image/package_icon_03.png" alt=""></div>
+									<div class="package_des fl">
+										<p class="package_name">IPTV</p>
+										<p>本周时长<span class="des_01">1000分钟</span></p>
+										<p>新片速递<span class="des_02">《你的名字》</span></p>
+										<p>观看路径<span class="des_03">首页/最新/爱情</span></p>
+									</div>
+								</div>
+								<div class="package_cont_list">
+									<div class="pic fl"><img src="../app/image/package_icon_02.png" alt=""></div>
+									<div class="package_des fl">
+										<p class="package_name">手机融合</p>
+										<p>套餐名称<span class="des_01">什么什么的套餐</span></p>
+										<p>套餐流量<span class="des_02">10000M剩9828M</span></p>
+										<p>通话时长<span class="des_03">123分钟</span></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>						
+					<!-- 上网时长 无喜欢数据Modal -->
+					<div class="surfing_wrp g_modal_wrp hide">
+						<div class="g_modal_container">
+							<a class="close_btn" href="#"></a>
+							<div class="test_loading">
+								<img src="../app/image/surfing_test_loading.png" alt="">
+								<p>正在分析...</p>
+							</div>
+							<div class="test_result hide">
+								<div class="block_01 clearfix">
+									<div class="avatar fl"><img src="../app/image/head_icon_big2.png" alt=""></div>
+									<div class="des fl">
+										<div class="name clearfix"><span class="title">追剧狂魔！</span><div class="score_wrp"><span class="scored"></span><span class="scored"></span><span class="scored"></span><span class="no_score"></span><span class="no_score"></span></div></div>
+										<div class="tips">打怪煲剧虽爽，还是要注意身体健康。早点睡觉，白天的世界更精彩。与你的小伙伴 分享 共勉！<a class="share_btn" href="#">分享</a></div>
+									</div>
+								</div>
+								<div class="block_02">
+									<div id="surfing_graphi_wrp"></div>									
+								</div>
+							</div>														
+						</div>
+					</div>	
+					<!-- 上网时长Modal -->
+					<div class="surfing_like_wrp g_modal_wrp hide">
+						<div class="g_modal_container">
+							<a class="close_btn" href="#"></a>
+							<div class="test_loading">
+								<img src="../app/image/surfing_test_loading.png" alt="">
+								<p>正在分析...</p>
+							</div>
+							<div class="test_result hide">
+								<div class="block_01 clearfix">
+									<div class="avatar fl"><img src="../app/image/head_icon_big2.png" alt=""></div>
+									<div class="des fl">
+										<div class="name clearfix"><span class="title">追剧狂魔！</span><div class="score_wrp"><span class="scored"></span><span class="scored"></span><span class="scored"></span><span class="no_score"></span><span class="no_score"></span></div></div>
+										<div class="tips">打怪煲剧虽爽，还是要注意身体健康。早点睡觉，白天的世界更精彩。与你的小伙伴 分享 共勉！<a class="share_btn" href="#">分享</a></div>
+									</div>
+								</div>
+								<div class="block_02 clearfix">
+									<div id="surfing_graphi_wrp_left" class="fl"></div>
+									<div id="surfing_graphi_wrp_right" class="fl"></div>
+								</div>
+							</div>							
+						</div>
+					</div>			
+				</div>
+				<div id="block2" class="tabs_block" style="display:none;"> 
+					<div class="index_wrp">
+						<div class="item">
+							<i class="speed_test_bac"></i>
+							<a href="#" class="speed_test_btn">开始测试</a>
+						</div>
+						<div class="item no_margin">
+							<i class="surfing_test_bac"></i>
+							<a href="#" class="surfing_test_btn">上网时长分析</a>
+						</div>
+					</div>
+					<!-- 网速测速Modal -->
+					<div class="speed_test_wrp g_modal_wrp hide">
+						<div class="g_modal_container">
+							<a class="close_btn" href="#"></a>
+							<div class="speed_test_loading">
+								<img src="../app/image/speed_test_loading.png" alt="">
+								<p>正在测速...</p>
+							</div>
+							<div class="speed_test_cont hide">
+								<p class="title">测试结果</p>
+								<p class="test_result"><span class="speed_num">19.98Mb</span> <span class="speed_des">慢</span></p>
+								<div class="speed_graphic">
+									<div class="speed_line_wrp">
+										<div class="speed_percent" style="width:27%"></div>
+									</div>
+									<div class="speed_cont_wrp clearfix">
+										<div class="speed_cont_list speed_cont_list_active">
+											<i class="icon_pos"></i>
+											<p>慢</p>
+											<p>12M以下</p>
+										</div>
+										<div class="speed_cont_list">
+											<i class="icon_pos"></i>
+											<p>较慢</p>
+											<p>20M</p>
+										</div>
+										<div class="speed_cont_list">
+											<i class="icon_pos"></i>
+											<p>中</p>
+											<p>50M</p>
+										</div>
+										<div class="speed_cont_list">
+											<i class="icon_pos"></i>
+											<p>快</p>
+											<p>100M</p>
+										</div>
+										<div class="speed_cont_list">
+											<i class="icon_pos"></i>
+											<p>极快</p>
+											<p>1000M</p>
+										</div>
+									</div>
+									<p class="analysis">您已领先了<strong>40%</strong>的用户，还有<strong>60%</strong>的用户驾驶火箭跑到了您的前面</p>		
+									<p class="analysis">赶紧去超越他们~</p>	
+									<a class="speed_up_btn" href="#">我要提速</a>						
+								</div>								
+							</div>
+						</div>
+					</div>
+					<!-- 上网时长 无喜欢数据Modal -->
+					<div class="surfing_wrp g_modal_wrp hide">
+						<div class="g_modal_container">
+							<a class="close_btn" href="#"></a>
+							<div class="test_loading hide">
+								<img src="../app/image/surfing_test_loading.png" alt="">
+								<p>正在分析...</p>
+							</div>
+							<div class="test_result">
+								<div class="block_01 clearfix">
+									<div class="avatar fl"><img src="../app/image/head_icon_big2.png" alt=""></div>
+									<div class="des fl">
+										<div class="name clearfix"><span class="title">追剧狂魔！</span><div class="score_wrp"><span class="scored"></span><span class="scored"></span><span class="scored"></span><span class="no_score"></span><span class="no_score"></span></div></div>
+										<div class="tips">打怪煲剧虽爽，还是要注意身体健康。早点睡觉，白天的世界更精彩。与你的小伙伴 分享 共勉！<a class="share_btn" href="#">分享</a></div>
+									</div>
+								</div>
+								<div class="block_02">
+									<div id="surfing_graphi_wrp2"></div>									
+								</div>
+							</div>														
+						</div>
+					</div>	
+					<!-- 上网时长Modal -->
+					<div class="surfing_like_wrp g_modal_wrp hide">
+						<div class="g_modal_container">
+							<a class="close_btn" href="#"></a>
+							<div class="test_loading">
+								<img src="../app/image/surfing_test_loading.png" alt="">
+								<p>正在分析...</p>
+							</div>
+							<div class="test_result hide">
+								<div class="block_01 clearfix">
+									<div class="avatar fl"><img src="../app/image/head_icon_big2.png" alt=""></div>
+									<div class="des fl">
+										<div class="name clearfix"><span class="title">追剧狂魔！</span><div class="score_wrp"><span class="scored"></span><span class="scored"></span><span class="scored"></span><span class="no_score"></span><span class="no_score"></span></div></div>
+										<div class="tips">打怪煲剧虽爽，还是要注意身体健康。早点睡觉，白天的世界更精彩。与你的小伙伴 分享 共勉！<a class="share_btn" href="#">分享</a></div>
+									</div>
+								</div>
+								<div class="block_02 clearfix">
+									<div id="surfing_graphi_wrp_left2" class="fl"></div>
+									<div id="surfing_graphi_wrp_right2" class="fl"></div>
+								</div>
+							</div>							
+						</div>
+					</div>	
+				</div>
+				<div id="block3" class="tabs_block" style="display:none">
 					<div class="coupon_box clearfix ">
 						<div class="habit_box fl">
-							<div id="container" style="min-width:400px;height:400px"></div>
+							<div id="containers" style="min-width:400px;height:400px"></div>
 						</div>
 						<div class="right_box fl">
 							<div class="right_item_list clearfix">
@@ -50,14 +442,10 @@
 							</div>
 						</div>
 						<div class="ad_bottom">
-							<!-- <marquee direction="up" scrolldelay="250" scrolldelay="2000" onMouseOut="this.start()" onMouseOver="this.stop()">
-								<a href="javascript:;" class="marquee_a">IPTV毫无广告，全程流畅，4万小时库任点播，精彩无限</a><br>
-								<a href="javascript:;" class="marquee_a">精彩无限</a>
-							</marquee> -->
 							<ul>
 								<li><a href="javascript:;" class="marquee_a">IPTV毫无广告，全程流畅，4万小时库任点播，精彩无限</a></li>
-								<li><a href="javascript:;" class="marquee_a">精彩无限</a></li>
-								<li><a href="javascript:;" class="marquee_a">全程流畅</a></li>
+								<li><a href="javascript:;" class="marquee_a">广告2</a></li>
+								<li><a href="javascript:;" class="marquee_a">广告3</a></li>
 							</ul>
 						</div>
 					</div>
@@ -100,60 +488,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="single_renew hide">
-						<div class="single_renew_list clearfix">
-							<div class="single_renew_item fl">
-								<span class="single_renew_term">优惠价</span>
-								<span class="orange_span">￥199/月</span>
-							</div>
-							<div class="single_renew_item right_item fl">
-								<span class="single_renew_term">手机套餐</span>
-								<span class="renew_long_choose no_right active">流量11G通话700分钟</span>
-							</div>
-							<div class="single_renew_item fl">
-								<span class="single_renew_term">宽带速率</span>
-								<span class="renew_long_choose renew_short ">100M</span>
-								<span class="renew_long_choose renew_short no_right active">200M</span>
-							</div>
-							<div class="single_renew_item right_item fl">
-								<span class="single_renew_term">电信电视</span>
-								<span class="renew_long_choose no_right active">免费用（含4K机顶盒）</span>
-							</div>
-							<div class="single_renew_item fl clearfix">
-								<span class="single_renew_term fl">副卡</span>
-								<a href="javascript:;" class="reduce renew_btn fl"></a>
-								<span class="fl renew_span">1</span>
-								<a href="javascript:;" class="add renew_btn fl"></a>
-							</div>
-							<div class="single_renew_item right_item fl">
-								<span class="single_renew_term">靓号</span>
-								<select name="" id="" class="select_phone">
-									<option value="">选择号码</option>
-									<option value="">18819489636</option>
-								</select>
-							</div>
-							<div class="single_renew_item  fl">
-								<span class="single_renew_term">新装宽带</span>
-								<span class="renew_long_choose renew_small ">是</span>
-								<span class="renew_long_choose renew_small  no_right active">否</span>
-							</div>
-							<div class="single_renew_item fl">
-								<span class="single_renew_term">新装号码</span>
-								<span class="renew_long_choose renew_small ">是</span>
-								<span class="renew_long_choose renew_small  no_right active">否</span>
-							</div>
-							<div class="single_renew_item long_item fl">
-								<span class="single_renew_term">购机礼包</span>
-								<span class="renew_long_choose">+30元/月iphone7仅需2999元！</span>
-								<span class="renew_long_choose renew_mid active">不需要手机</span>
-							</div>
-						</div>
-						<div class="single_renew_btn">
-							<a href="javascript:;" class="continue">我要续约</a>
-							<a href="javascript:;" class="only">我只要宽带>></a>
-						</div>
-					</div>
-					<div class="increase_speed hide">
+					<div class="increase_speed old_increase_speed hide">
 						<p class="big_p">老用户专享  限时大提速</p>
 						<div class="increase_speed_step clearfix">
 							<div class="step_item fl">
@@ -190,7 +525,7 @@
 						</div>
 						<div class="speed_btn"><a href="javascript:;">开始提速</a></div>
 					</div>
-					<div class="increase_speed hide">
+					<div class="increase_speed quickly_renew hide">
 						<p class="big_p">轻松<em>4步</em>  快速续约</p>
 						<div class="increase_speed_step clearfix">
 							<div class="step_item fl">
@@ -230,7 +565,7 @@
 					
 				</div>
 				<div id="block5" class="tabs_block" style="display:none;">
-					<div class="dan_bill">
+					<div class="dan_bill clearfix">
 						<div class="bill_box">
 							<div class="bill_box_list">
 								<span class="bill_name">客户名称</span>
@@ -283,7 +618,29 @@
 							</div>
 						</div>
 					</div>
-					<div class="bill_black_wrapper hide">
+				</div>
+			</div>			
+			<!-- 个人设置Modal -->
+			<div class="personal_setting_wrp hide">
+				<div class="personal_setting_cont">
+					<div class="title">宽带账户：<span class="account">2891882@gd.163</span></div>
+					<div class="user_info">
+						<div class="avatar"><img src="../app/image/head_icon_big.png" alt=""></div>
+						<div class="user_name">虾味千层糕</div>
+						<div class="user_des">个人备注：<span>我的一秒钟，你的两分钟</span></div>
+						<div class="online_time">总在线天数：<span>510</span>天</div>
+						<a class="info_edit_btn" href="#">编辑个人资料</a>
+					</div>
+					<div class="user_info_editing hide">
+						<div class="avatar"><img src="../app/image/head_icon_big.png" alt=""></div>
+						<div class="user_name">昵称<input class="user_name_input" type="text" placeholder="" value="虾味千层糕"></div>
+						<div class="user_des"><span>备注</span><textarea name="" class="user_des_input"></textarea></div>						
+						<div class="btns"><a class="edit_cancel_btn" href="#">取消</a><a class="edit_confirm_btn" href="#">保存</a></div>
+					</div>
+					<a href="#" class="close_personal_btn"></a>
+				</div>
+			</div>
+			<div class="bill_black_wrapper hide">
 						<div class="bill_wrap">
 							<div class="closed"><img src="../app/image/closed2.png" alt=""></div>
 							<div class="bill_detail_box">
@@ -414,34 +771,65 @@
 								</div>
 							</div>
 						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<script src="../app/js/highcharts.js"></script>
+					</div>			
+		</div>	
+		<div class="gl_loading hide">
+			<img src="../app/image/loading.gif" alt="">
+			<p>正在加载中...</p>
+		</div>	
+	</div>	
 	<script>
+		function autoScroll(obj){  
+			$(obj).find("ul").animate({  
+				marginTop : "-39px"  
+			},500,function(){  
+				$(this).css({marginTop : "0px"}).find("li:first").appendTo(this);  
+			})  
+		}
 		$(function(){
+			setInterval('autoScroll(".ad_bottom")',3000);
+
 			var iFunctions = {};
 
 			iFunctions = {
 				init: function(){
+					iFunctions.globalFuc();
+				},
+				globalFuc: function(){
 					iFunctions.tabsFuc();
 					iFunctions.add_phone_num();
 					iFunctions.choose_type();
 					iFunctions.toggle_modal();
 					iFunctions.browse_distribution();
-					iFunctions.autoScroll();
+					/*iFunctions.autoScroll();*/
+					iFunctions.closeModal();
+					iFunctions.personalFuc();
+					iFunctions.intelligent_service();
+
+					$('.close_win_btn').on('click', function(e){
+						e.preventDefault();
+
+						$('.g_wrapper').hide();
+					});
 				},
 				tabsFuc: function(){
 					var $nav_btn = $('.nav_btn');
 
-					$nav_btn.on('click', function(){
-						if($(this).hasClass('active')){
+					$nav_btn.on('click', function(e){
+						e.preventDefault();
+
+						var self = this;
+
+						if($(self).hasClass('active')){
 							return false
 						} else {
-							$(this).addClass('active').siblings().removeClass('active');
-							$($(this).attr('data-show')).siblings().hide().end().show();
+							$(self).addClass('active').siblings().removeClass('active');
+							//$('.gl_loading').removeClass('hide');
+
+							//setTimeout(function(){
+								//$('.gl_loading').addClass('hide');
+								$($(self).attr('data-show')).siblings().hide().end().fadeIn();
+							//},3000);						
 						}
 					});
 				},
@@ -477,7 +865,7 @@
 					})
 				},
 				browse_distribution: function(){
-					$('#container').highcharts({
+					$('#containers').highcharts({
 				        chart: {
 				            type: 'bar'
 				        },
@@ -555,24 +943,610 @@
 				            },],
 				        }]
 				    });
-					$(document).on('mouseover','.highcharts-point',function(){
+					/*$(document).on('mouseover','.highcharts-point',function(){
 						$(this).parents('.habit_box').next().removeClass('hide');
 					})
 					$(document).on('mouseleave','.highcharts-point',function(){
 						$(this).parents('.habit_box').next().addClass('hide');
-					})
+					})*/
 
 				},
-				autoScroll: function(obj){
+				/*autoScroll: function(obj){
 						
-						$(obj).find("ul").animate({  
-							marginTop : "-39px"  
-						},2000,function(){  
-							$(this).css({marginTop : "0px"}).find("li:first").appendTo(this);  
-						}) 
-
-						this.autoScroll(".ad_bottom");
 					
+				},*/
+				closeModal: function(){
+					$(document).on('click', '.close_btn', function(e){
+						e.preventDefault();
+
+						$(this).parents('.g_modal_wrp').animate({							
+							'height': 0,
+							'width': 0
+							},
+							200, function() {
+							/* stuff to do after animation is complete */
+							$(this).addClass('hide');
+						});
+					});
+				},
+				personalFuc: function(){
+					$('.info_edit_btn').on('click', function(e){
+						e.preventDefault();
+
+						$('.user_info').addClass('hide');
+						$('.user_info_editing').removeClass('hide');
+					});
+
+					$('.edit_cancel_btn').on('click', function(e){
+						e.preventDefault();
+
+						$('.user_info').removeClass('hide');
+						$('.user_info_editing').addClass('hide');
+					});
+
+					$('.close_personal_btn').on('click', function(e){
+						e.preventDefault();
+
+						$('.personal_setting_wrp').addClass('hide');
+						$('.user_info').removeClass('hide');
+						$('.user_info_editing').addClass('hide');
+					});
+
+					$('.share_btn').on('click', function(e){
+						e.preventDefault();
+
+						iFunctions.screenShot('.share_btn','.surfing_like_wrp');
+					});
+
+					/*点击测速*/
+					$('.speed_test_btn').on('click', function(e){
+						e.preventDefault();
+						var $ele = $(this).parents('#block1').find('.speed_test_wrp');
+
+						$ele.removeClass('hide');
+						$ele.animate({							
+							'width': '928px',
+							'height': '492px'
+							},
+							200, function() {
+							/* stuff to do after animation is complete */		
+							setTimeout(function(){
+								$ele.find('.speed_test_loading').addClass('hide');
+								$ele.find('.speed_test_cont').removeClass('hide');
+							},3000)
+						});
+					});
+
+					/*点击查看套餐*/
+					$('.see_packges').on('click',function(e){
+						e.preventDefault();
+						var $ele = $(this).parents('#block1').find('.user_no_renew_wrp');
+
+						$ele.removeClass('hide');
+						$ele.animate({							
+							'width': '928px',
+							'height': '492px'
+							},200)
+					})
+
+					//点击查看账单
+					$('.see_bill').on('click',function(){
+
+						$(this).parents('#block1').hide();
+						$('#block5').show();
+						$('.tabs ul li:first').removeClass('active');
+						$('.tabs ul li:last').addClass('active');
+						/*var $ele = $(this).parents('.tabs_block_wrp').siblings('#block5');
+						$(this).parents('#block1').addClass('hide');
+						$('#block5').show();
+						$(this).parents('.tabs ul').firstChild().removeClass('active');*/
+						
+					})
+
+					//点击查看时长
+					$('.see_usetime,.my_groupup').on('click',function(e){
+						e.preventDefault();
+						var $ele = $(this).parents('#block1').find('.grow_history_wrp');
+
+						$ele.removeClass('hide');
+						$ele.animate({							
+							'width': '928px',
+							'height': '492px'
+							},200)
+					})
+
+					//点击我要提速
+					$('.speed_up_btn').on('click',function(){
+						$(this).parents('#block1').hide();
+						$(this).parents('#block2').hide();
+						$('#block4').show();
+						$('#block4 .old_increase_speed').removeClass('hide');
+						$('#block4 .quickly_renew').addClass('hide');
+						$('#block4 .package_type').addClass('hide');
+						$('.tabs ul li:first').removeClass('active');
+						$('.tabs ul li:eq(1)').removeClass('active');
+						$('.tabs ul li:eq(3)').addClass('active');
+					})
+
+					//点击我要续约
+					$('.renew_it').on('click',function(){
+						$(this).parents('#block1').hide();
+						$('#block4').show();
+						$('#block4 .quickly_renew').removeClass('hide');
+						$('#block4 .old_increase_speed').addClass('hide');
+						$('#block4 .package_type').addClass('hide');
+						$('.tabs ul li:first').removeClass('active');
+						$('.tabs ul li:eq(3)').addClass('active');
+					})
+
+					/*上网时长不含喜欢数据*/
+					$('#surfing_graphi_wrp').highcharts({
+				        chart: {
+				            type: 'column'
+				        },
+				        title: {
+				            text: '本周平均一天上网的时间分布(分钟)'
+				        },
+				        credits: {
+				        	enabled: false   //设置右下角的商标链接
+				        },
+				        xAxis: {
+				            categories: [
+				                '7:00-10:00',
+				                '10:00-19:00',
+				                '19:00-23:00',
+				                '23:00-03:00'
+				            ],
+				            tickWidth: 0,  //设置刻度的像素宽度（突出来的刻度）
+				            lineColor: '#e9e9e9'
+				        },
+				        yAxis: [{
+				            min: 0,     //设置刻度起始值
+				            title: {
+				            	text: null
+				            },
+				            tickInterval: 20,   //设置刻度间隔大小
+				            lineWidth: 1,
+				            lineColor: '#e9e9e9',
+				            gridLineColor: '#e9e9e9'
+				        	},{
+				        		title: {
+					            	text: null
+					            },
+				        		lineWidth: 1,
+				        		lineColor: '#e9e9e9',
+				        		opposite: true  
+				        	}
+				        ],
+				        tooltip: {
+				            /*headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+				            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+				            '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+				            footerFormat: '</table>',
+				            shared: true,
+				            useHTML: true*/
+				            enabled: false
+				        },
+				        plotOptions: {
+				            column: {
+				                pointPadding: 0.2,
+				                borderWidth: 0
+				            },
+				            series: {
+				                color: '#006bcf'
+				            }
+				        },
+				        legend: {
+				        	enabled: false
+				        },
+				        series: [{
+				            name: '',
+				            data: [39.9, 25, 4, 125],
+				            enableMouseTracking: false //不允许鼠标动作
+				        }]
+				    });
+					$('#surfing_graphi_wrp2').highcharts({
+				        chart: {
+				            type: 'column'
+				        },
+				        title: {
+				            text: '本周平均一天上网的时间分布(分钟)'
+				        },
+				        credits: {
+				        	enabled: false   //设置右下角的商标链接
+				        },
+				        xAxis: {
+				            categories: [
+				                '7:00-10:00',
+				                '10:00-19:00',
+				                '19:00-23:00',
+				                '23:00-03:00'
+				            ],
+				            tickWidth: 0,  //设置刻度的像素宽度（突出来的刻度）
+				            lineColor: '#e9e9e9'
+				        },
+				        yAxis: [{
+				            min: 0,     //设置刻度起始值
+				            title: {
+				            	text: null
+				            },
+				            tickInterval: 20,   //设置刻度间隔大小
+				            lineWidth: 1,
+				            lineColor: '#e9e9e9',
+				            gridLineColor: '#e9e9e9'
+				        	},{
+				        		title: {
+					            	text: null
+					            },
+				        		lineWidth: 1,
+				        		lineColor: '#e9e9e9',
+				        		opposite: true  
+				        	}
+				        ],
+				        tooltip: {
+				            /*headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+				            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+				            '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+				            footerFormat: '</table>',
+				            shared: true,
+				            useHTML: true*/
+				            enabled: false
+				        },
+				        plotOptions: {
+				            column: {
+				                pointPadding: 0.2,
+				                borderWidth: 0
+				            },
+				            series: {
+				                color: '#006bcf'
+				            }
+				        },
+				        legend: {
+				        	enabled: false
+				        },
+				        series: [{
+				            name: '',
+				            data: [39.9, 25, 4, 125],
+				            enableMouseTracking: false //不允许鼠标动作
+				        }]
+				    });
+
+					/*上网时长含喜欢数据*/
+					$('#surfing_graphi_wrp_left').highcharts({
+				        chart: {
+				            type: 'column'
+				        },
+				        title: {
+				            text: '本周平均一天上网的时间分布(分钟)'
+				        },
+				        credits: {
+				        	enabled: false   //设置右下角的商标链接
+				        },
+				        xAxis: {
+				            categories: [
+				                '7:00-10:00',
+				                '10:00-19:00',
+				                '19:00-23:00',
+				                '23:00-03:00'
+				            ],
+				            tickWidth: 0,  //设置刻度的像素宽度（突出来的刻度）
+				            lineColor: '#e9e9e9'
+				        },
+				        yAxis: [{
+				            min: 0,     //设置刻度起始值
+				            title: {
+				            	text: null
+				            },
+				            tickInterval: 20,   //设置刻度间隔大小
+				            lineWidth: 1,
+				            lineColor: '#e9e9e9',
+				            gridLineColor: '#e9e9e9'
+				        	},{
+				        		title: {
+					            	text: null
+					            },
+				        		lineWidth: 1,
+				        		lineColor: '#e9e9e9',
+				        		opposite: true  
+				        	}
+				        ],
+				        tooltip: {
+				            /*headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+				            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+				            '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+				            footerFormat: '</table>',
+				            shared: true,
+				            useHTML: true*/
+				            enabled: false
+				        },
+				        plotOptions: {
+				            column: {
+				                pointPadding: 0.2,
+				                borderWidth: 0
+				            },
+				            series: {
+				                color: '#006bcf'
+				            }
+				        },
+				        legend: {
+				        	enabled: false
+				        },
+				        series: [{
+				            name: '',
+				            data: [39.9, 25, 4, 125],
+				            enableMouseTracking: false //不允许鼠标动作
+				        }]
+				    });
+					$('#surfing_graphi_wrp_left2').highcharts({
+				        chart: {
+				            type: 'column'
+				        },
+				        title: {
+				            text: '本周平均一天上网的时间分布(分钟)'
+				        },
+				        credits: {
+				        	enabled: false   //设置右下角的商标链接
+				        },
+				        xAxis: {
+				            categories: [
+				                '7:00-10:00',
+				                '10:00-19:00',
+				                '19:00-23:00',
+				                '23:00-03:00'
+				            ],
+				            tickWidth: 0,  //设置刻度的像素宽度（突出来的刻度）
+				            lineColor: '#e9e9e9'
+				        },
+				        yAxis: [{
+				            min: 0,     //设置刻度起始值
+				            title: {
+				            	text: null
+				            },
+				            tickInterval: 20,   //设置刻度间隔大小
+				            lineWidth: 1,
+				            lineColor: '#e9e9e9',
+				            gridLineColor: '#e9e9e9'
+				        	},{
+				        		title: {
+					            	text: null
+					            },
+				        		lineWidth: 1,
+				        		lineColor: '#e9e9e9',
+				        		opposite: true  
+				        	}
+				        ],
+				        tooltip: {
+				            /*headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+				            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+				            '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+				            footerFormat: '</table>',
+				            shared: true,
+				            useHTML: true*/
+				            enabled: false
+				        },
+				        plotOptions: {
+				            column: {
+				                pointPadding: 0.2,
+				                borderWidth: 0
+				            },
+				            series: {
+				                color: '#006bcf'
+				            }
+				        },
+				        legend: {
+				        	enabled: false
+				        },
+				        series: [{
+				            name: '',
+				            data: [39.9, 25, 4, 125],
+				            enableMouseTracking: false //不允许鼠标动作
+				        }]
+				    });
+
+					$('#surfing_graphi_wrp_right').highcharts({ //环形图
+				        chart: {
+				            type: 'pie'
+				        },
+				        title: {
+				            text: '上网喜好'
+				        },
+				        credits: {
+				        	enabled: false   //设置右下角的商标链接
+				        },
+				        plotOptions: {
+				            pie: {
+				            	size: 215,
+				            	borderWidth: null,
+				            	borderColor: null,
+				                innerSize: 140,
+				                colors:[
+				                	'#f1f1f1',
+				                	'#a9d86e',
+				                	'#f8a20f',
+				                	'#5faee3',
+				                	'#9aaee7'
+				                ],
+				                center: [170, 100],
+				                dataLabels: {
+					            	enabled: false
+					            },
+					            showInLegend: true,  //是否显示图例
+					            point : {
+						            events : {
+						                legendItemClick: function() {
+						                    return false;
+						                }
+						            }
+						        }
+				            }
+				        },
+				        legend: {
+				        	layout: 'vertical',
+				            backgroundColor: 'transparent',
+				            align: 'left',
+				            verticalAlign: 'top',
+				            floating: true,
+				            symbolRadius: 0,
+				            symbolWidth: 11,
+				            symbolHeight: 11,
+				            symbolPadding: 11,
+				            itemMarginBottom: 8,
+				            itemStyle: {
+				                color: '#666666',
+				                fontSize: 12,
+				                fontWeight: 'normal'
+				            },
+				            itemHoverStyle: {
+				                color: '#666666'
+				            },
+				            y: 35
+				        },
+				        series: [{
+				            data: [
+			            		['影视', 10],			            		
+			            		['游戏' ,30], 
+			            		['音乐', 30],
+			            		['网购', 30]
+				            ],
+				            enableMouseTracking: false //不允许鼠标动作
+				        }]
+				    });
+
+					$('#surfing_graphi_wrp_right2').highcharts({ //环形图
+				        chart: {
+				            type: 'pie'
+				        },
+				        title: {
+				            text: '上网喜好'
+				        },
+				        credits: {
+				        	enabled: false   //设置右下角的商标链接
+				        },
+				        plotOptions: {
+				            pie: {
+				            	size: 215,
+				            	borderWidth: null,
+				            	borderColor: null,
+				                innerSize: 140,
+				                colors:[
+				                	'#f1f1f1',
+				                	'#a9d86e',
+				                	'#f8a20f',
+				                	'#5faee3',
+				                	'#9aaee7'
+				                ],
+				                center: [170, 100],
+				                dataLabels: {
+					            	enabled: false
+					            },
+					            showInLegend: true,  //是否显示图例
+					            point : {
+						            events : {
+						                legendItemClick: function() {
+						                    return false;
+						                }
+						            }
+						        }
+				            }
+				        },
+				        legend: {
+				        	layout: 'vertical',
+				            backgroundColor: 'transparent',
+				            align: 'left',
+				            verticalAlign: 'top',
+				            floating: true,
+				            symbolRadius: 0,
+				            symbolWidth: 11,
+				            symbolHeight: 11,
+				            symbolPadding: 11,
+				            itemMarginBottom: 8,
+				            itemStyle: {
+				                color: '#666666',
+				                fontSize: 12,
+				                fontWeight: 'normal'
+				            },
+				            itemHoverStyle: {
+				                color: '#666666'
+				            },
+				            y: 35
+				        },
+				        series: [{
+				            data: [
+			            		['影视', 10],			            		
+			            		['游戏' ,30], 
+			            		['音乐', 30],
+			            		['网购', 30]
+				            ],
+				            enableMouseTracking: false //不允许鼠标动作
+				        }]
+				    });
+				},
+
+				intelligent_service: function(){
+					//点击开始测试
+					$('.speed_test_btn').on('click', function(e){
+						e.preventDefault();
+						var $ele = $('#block2').find('.speed_test_wrp');
+
+						$ele.removeClass('hide');
+						$ele.animate({							
+							'width': '928px',
+							'height': '492px'
+							},
+							200, function() {
+							/* stuff to do after animation is complete */		
+							setTimeout(function(){
+								$ele.find('.speed_test_loading').addClass('hide');
+								$ele.find('.speed_test_cont').removeClass('hide');
+							},3000)
+						});
+					});
+
+					//点击上网时长分析
+					$('.surfing_test_btn').on('click',function(e){
+						e.preventDefault();
+						var $ele = $('#block2').find('.surfing_like_wrp');
+
+						$ele.removeClass('hide');
+						$ele.animate({							
+							'width': '928px',
+							'height': '492px'
+							},
+							200, function() {
+							/* stuff to do after animation is complete */		
+							setTimeout(function(){
+								$ele.find('.test_loading').addClass('hide');
+								$ele.find('.test_result').removeClass('hide');
+							},3000)
+						});
+					})
+				},
+
+				screenShot: function(dom,target){//分享截图
+					var $ele = $(dom),
+						$target = $(target)[0];
+
+					$ele.on("click", function(event) {
+						console.log("截图了");
+                        event.preventDefault();
+                        html2canvas($target, {
+	                        allowTaint: true,
+	                        taintTest: false,
+	                        onrendered: function(canvas) {
+	                            canvas.id = "mycanvas";
+	                            //document.body.appendChild(canvas);
+	                            //生成base64图片数据
+	                            var dataUrl = canvas.toDataURL("image/jpeg");
+	                            var newImg = document.createElement("img");
+	                            newImg.src =  dataUrl;
+	                            document.body.appendChild(newImg);
+
+	                            Canvas2Image.saveAsJPEG(newImg);
+	                        }
+	                    });
+
+
+	                });
 				}
 			};
 

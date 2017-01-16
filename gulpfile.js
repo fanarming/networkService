@@ -10,7 +10,7 @@ var plumber = require('gulp-plumber');
 var includeTpl = require("gulp-file-include");
 //var browserSync = require('browser-sync');
 var livereload = require('gulp-livereload');//自动刷新页面
-var runSequence = require('gulp-run-sequence'); //顺序执行任务
+//var runSequence = require('gulp-run-sequence'); //顺序执行任务
 var webserver = require('gulp-webserver'); //web服务器
 
 var config = {
