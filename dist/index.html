@@ -18,23 +18,408 @@
 		<div class="main_wrp">
 			<div class="tabs">
 				<ul class="clearfix">
-					<li class="nav_btn active" data-show="#block1">我的宽带</li>
+					<li class="nav_btn" data-show="#block1">我的宽带</li>
 					<li class="nav_btn" data-show="#block2">智能服务</li>
-					<li class="nav_btn" data-show="#block3">尊享礼券</li>
+					<li class="nav_btn active" data-show="#block3">尊享礼券</li>
 					<li class="nav_btn" data-show="#block4">业务办理</li>
 					<li class="nav_btn" data-show="#block5">我的账单</li>
 				</ul>
 			</div>
 			<div class="tabs_block_wrp">
-				<div id="block1" class="tabs_block active">1</div>
+				<div id="block1" class="tabs_block" style="display:none;">1</div>
 				<div id="block2" class="tabs_block" style="display:none;">2</div>
-				<div id="block3" class="tabs_block" style="display:none;">3</div>
-				<div id="block4" class="tabs_block" style="display:none;">4</div>
-				<div id="block5" class="tabs_block" style="display:none;">5</div>
+				<div id="block3" class="tabs_block active">
+					<div class="coupon_box clearfix ">
+						<div class="habit_box fl">
+							<div id="container" style="min-width:400px;height:400px"></div>
+						</div>
+						<div class="right_box fl">
+							<div class="right_item_list clearfix">
+								<div class="logo fl"><img src="../app/image/ad_icon_01.png" alt=""></div>
+								<div class="num fr">50%</div>
+								<div class="ad fl">爱奇艺会员五折包月</div>
+								<div class="usetime fl">使用期间：2017-1-31</div>
+								<a href="javascript:;" class="use_btn fr">点击领用</a>	
+							</div>
+							<div class="right_item_list clearfix">
+								<div class="logo fl"><img src="../app/image/ad_icon_02.png" alt=""></div>
+								<div class="num fr">100%</div>
+								<div class="ad fl">提速送迅雷会员2个月</div>
+								<div class="usetime fl">使用期间：2017-1-31</div>
+								<a href="javascript:;" class="use_btn fr">点击领用</a>	
+							</div>
+						</div>
+						<div class="ad_bottom">
+							<!-- <marquee direction="up" scrolldelay="250" scrolldelay="2000" onMouseOut="this.start()" onMouseOver="this.stop()">
+								<a href="javascript:;" class="marquee_a">IPTV毫无广告，全程流畅，4万小时库任点播，精彩无限</a><br>
+								<a href="javascript:;" class="marquee_a">精彩无限</a>
+							</marquee> -->
+							<ul>
+								<li><a href="javascript:;" class="marquee_a">IPTV毫无广告，全程流畅，4万小时库任点播，精彩无限</a></li>
+								<li><a href="javascript:;" class="marquee_a">精彩无限</a></li>
+								<li><a href="javascript:;" class="marquee_a">全程流畅</a></li>
+							</ul>
+						</div>
+					</div>
+					
+				</div>
+				<div id="block4" class="tabs_block" style="display:none;">
+					<div class="package_type">
+						<div class="package_type_list clearfix">
+							<p class="package_p">宽带套餐</p>
+							<div class="package_type_item fl">
+								<a href="javascript:;" ><img src="../app/image/package_icon_01.png" alt=""></a>
+								<a href="javascript:;" class="package_type_name">双百兆</a>
+							</div>
+							<div class="package_type_item fl">
+								<a href="javascript:;" ><img src="../app/image/package_icon_02.png" alt=""></a>
+								<a href="javascript:;" class="package_type_name">宽带+手机</a>
+							</div>
+							<div class="package_type_item fl">
+								<a href="javascript:;" ><img src="../app/image/package_icon_03.png" alt=""></a>
+								<a href="javascript:;" class="package_type_name">宽带+IPTV</a>
+							</div>
+						</div>
+						<div class="package_type_list clearfix">
+							<p class="package_p">宽带套餐</p>
+							<div class="package_type_item fl">
+								<a href="javascript:;" ><img src="../app/image/package_icon_04.png" alt=""></a>
+								<a href="javascript:;" class="package_type_name">双百兆</a>
+							</div>
+							<div class="package_type_item fl">
+								<a href="javascript:;" ><img src="../app/image/package_icon_05.png" alt=""></a>
+								<a href="javascript:;" class="package_type_name">宽带+手机</a>
+							</div>
+							<div class="package_type_item fl">
+								<a href="javascript:;" ><img src="../app/image/package_icon_06.png" alt=""></a>
+								<a href="javascript:;" class="package_type_name">宽带+IPTV</a>
+							</div>
+							<div class="package_type_item no_right fl">
+								<a href="javascript:;" ><img src="../app/image/package_icon_07.png" alt=""></a>
+								<a href="javascript:;" class="package_type_name">宽带+IPTV</a>
+							</div>
+						</div>
+					</div>
+					<div class="single_renew hide">
+						<div class="single_renew_list clearfix">
+							<div class="single_renew_item fl">
+								<span class="single_renew_term">优惠价</span>
+								<span class="orange_span">￥199/月</span>
+							</div>
+							<div class="single_renew_item right_item fl">
+								<span class="single_renew_term">手机套餐</span>
+								<span class="renew_long_choose no_right active">流量11G通话700分钟</span>
+							</div>
+							<div class="single_renew_item fl">
+								<span class="single_renew_term">宽带速率</span>
+								<span class="renew_long_choose renew_short ">100M</span>
+								<span class="renew_long_choose renew_short no_right active">200M</span>
+							</div>
+							<div class="single_renew_item right_item fl">
+								<span class="single_renew_term">电信电视</span>
+								<span class="renew_long_choose no_right active">免费用（含4K机顶盒）</span>
+							</div>
+							<div class="single_renew_item fl clearfix">
+								<span class="single_renew_term fl">副卡</span>
+								<a href="javascript:;" class="reduce renew_btn fl"></a>
+								<span class="fl renew_span">1</span>
+								<a href="javascript:;" class="add renew_btn fl"></a>
+							</div>
+							<div class="single_renew_item right_item fl">
+								<span class="single_renew_term">靓号</span>
+								<select name="" id="" class="select_phone">
+									<option value="">选择号码</option>
+									<option value="">18819489636</option>
+								</select>
+							</div>
+							<div class="single_renew_item  fl">
+								<span class="single_renew_term">新装宽带</span>
+								<span class="renew_long_choose renew_small ">是</span>
+								<span class="renew_long_choose renew_small  no_right active">否</span>
+							</div>
+							<div class="single_renew_item fl">
+								<span class="single_renew_term">新装号码</span>
+								<span class="renew_long_choose renew_small ">是</span>
+								<span class="renew_long_choose renew_small  no_right active">否</span>
+							</div>
+							<div class="single_renew_item long_item fl">
+								<span class="single_renew_term">购机礼包</span>
+								<span class="renew_long_choose">+30元/月iphone7仅需2999元！</span>
+								<span class="renew_long_choose renew_mid active">不需要手机</span>
+							</div>
+						</div>
+						<div class="single_renew_btn">
+							<a href="javascript:;" class="continue">我要续约</a>
+							<a href="javascript:;" class="only">我只要宽带>></a>
+						</div>
+					</div>
+					<div class="increase_speed hide">
+						<p class="big_p">老用户专享  限时大提速</p>
+						<div class="increase_speed_step clearfix">
+							<div class="step_item fl">
+								<img src="../app/image/process_01.png" alt="">
+								<div class="step_item_name clearfix">
+									<div class="step_item_img fl"><img src="../app/image/num1.png" alt=""></div>
+									<span class="fl">提速查询</span>
+								</div>
+							</div>
+							<div class="step_icon fl"><img src="../app/image/next.png" alt=""></div>
+							<div class="step_item fl">
+								<img src="../app/image/process_02.png" alt="">
+								<div class="step_item_name clearfix">
+									<div class="step_item_img fl"><img src="../app/image/num2.png" alt=""></div>
+									<span class="fl">登记信息</span>
+								</div>
+							</div>
+							<div class="step_icon fl"><img src="../app/image/next.png" alt=""></div>
+							<div class="step_item fl">
+								<img src="../app/image/process_03.png" alt="">
+								<div class="step_item_name clearfix">
+									<div class="step_item_img fl"><img src="../app/image/num3.png" alt=""></div>
+									<span class="fl">系统受理</span>
+								</div>
+							</div>
+							<div class="step_icon fl"><img src="../app/image/next.png" alt=""></div>
+							<div class="step_item fl">
+								<img src="../app/image/process_04.png" alt="">
+								<div class="step_item_name clearfix">
+									<div class="step_item_img fl"><img src="../app/image/num4.png" alt=""></div>
+									<span class="fl">装维竣工</span>
+								</div>
+							</div>
+						</div>
+						<div class="speed_btn"><a href="javascript:;">开始提速</a></div>
+					</div>
+					<div class="increase_speed hide">
+						<p class="big_p">轻松<em>4步</em>  快速续约</p>
+						<div class="increase_speed_step clearfix">
+							<div class="step_item fl">
+								<img src="../app/image/con_01.png" alt="">
+								<div class="step_item_name clearfix">
+									<div class="step_item_img fl"><img src="../app/image/num1.png" alt=""></div>
+									<span class="fl">身份验证</span>
+								</div>
+							</div>
+							<div class="step_icon fl"><img src="../app/image/next.png" alt=""></div>
+							<div class="step_item fl">
+								<img src="../app/image/con_02.png" alt="">
+								<div class="step_item_name clearfix">
+									<div class="step_item_img fl"><img src="../app/image/num2.png" alt=""></div>
+									<span class="fl">订单确认</span>
+								</div>
+							</div>
+							<div class="step_icon fl"><img src="../app/image/next.png" alt=""></div>
+							<div class="step_item fl">
+								<img src="../app/image/con_03.png" alt="">
+								<div class="step_item_name clearfix">
+									<div class="step_item_img fl"><img src="../app/image/num3.png" alt=""></div>
+									<span class="fl">订单支付</span>
+								</div>
+							</div>
+							<div class="step_icon fl"><img src="../app/image/next.png" alt=""></div>
+							<div class="step_item fl">
+								<img src="../app/image/process_04.png" alt="">
+								<div class="step_item_name clearfix">
+									<div class="step_item_img fl"><img src="../app/image/num4.png" alt=""></div>
+									<span class="fl">续约完成</span>
+								</div>
+							</div>
+						</div>
+						<div class="speed_btn"><a href="javascript:;">开始续约</a></div>
+					</div>
+					
+				</div>
+				<div id="block5" class="tabs_block" style="display:none;">
+					<div class="dan_bill">
+						<div class="bill_box">
+							<div class="bill_box_list">
+								<span class="bill_name">客户名称</span>
+								<span class="bill_name_item">王锡玄</span>
+							</div>
+							<div class="bill_box_list">
+								<span class="bill_name">账单周期</span>
+								<span class="bill_name_item">2016年09月01日至2016年09月30日</span>
+							</div>
+							<p class="cost_p">您本期应付费用为<em>0.00元</em></p>
+							<div class="cost_box clearfix">
+								<div class="cost_box_left fl">
+									<div class="cost_box_list">
+										<span class="bill_name">本期消费总额</span>
+										<span class="bill_item">199.00元</span>
+									</div>
+									<div class="cost_box_list">
+										<span class="bill_name">本期已付费用</span>
+										<span class="bill_item">199.00元</span>
+									</div>
+									<div class="cost_box_list">
+										<span class="bill_name">本期需缴费</span>
+										<span class="bill_item orange">0.00元</span>
+									</div>
+									<div class="cost_box_left_btn"><a href="javascript:;" class="recharge_btn">马上充值</a></div>
+								</div>
+								<div class="cost_box_right fl">
+									<div class="cost_box_list">
+										<span class="bill_name">产品1</span>
+										<span class="bill_item">20M宽带</span>
+										<span class="bill_item">199.00元</span>
+									</div>
+									<div class="cost_box_list">
+										<span class="bill_name">产品2</span>
+										<span class="bill_item">移动电话</span>
+										<span class="bill_item">23.00元</span>
+									</div>
+									<div class="cost_box_right_btn"><a href="javascript:;" class="see_more">查看更多</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="bill_bottom duo_bill_bottom clearfix">
+							<div class="bill_bottom_left fl">
+								<span>贺元旦&nbsp;&nbsp;&nbsp;齐提速</span>
+								<div class="ad_btn"><a href="javascript:;" class="gift_btn">提速领大礼</a></div>
+							</div>
+							<div class="bill_bottom_right  clearfix fl">
+								<a class="ad_box fl" href="javascript:;"><img src="../app/image/ad_01.jpg" alt=""></a>
+								<a class="ad_box fl" href="javascript:;"><img src="../app/image/ad_02.jpg" alt=""></a>
+							</div>
+						</div>
+					</div>
+					<div class="bill_black_wrapper hide">
+						<div class="bill_wrap">
+							<div class="closed"><img src="../app/image/closed2.png" alt=""></div>
+							<div class="bill_detail_box">
+								<div class="bill_detail_box_wrapper">
+									<div class="bill_detail_top clearfix">
+										<p class="pro_name fl">产品一：乐享4G201407-主套餐</p>
+										<p class="price fr">199.00</p>
+										<span class="phone_num fl">用户号码：移动号码：18922719928</span>
+									</div>
+									<div class="bill_detail_main clearfix">
+										<div class="bill_detail_left fl">
+											<div class="bill_detail_left_list clearfix">
+												<span class="bill_big_span fl">消费项目</span><span class="bill_mid_span fr">金额（元）</span>
+											</div>
+											<div class="bill_detail_left_list">
+												<span class="bill_mid_span black">套餐内费用</span>
+											</div>
+											<div class="bill_detail_left_list clearfix">
+												<span class="bill_mid_span black">套餐费用</span>
+												<span class="bill_small_span mar_left fl">乐享4G套餐</span><span class="bill_small_span mar_left fr">299.00</span>
+											</div>
+											<div class="bill_detail_left_list">
+												<span class="bill_mid_span black">套餐外费用</span>
+											</div>
+											<div class="bill_detail_left_list">
+												<span class="bill_small_span">移动号码：<em>18922719928</em></span>
+											</div>
+											<div class="bill_detail_left_list clearfix">
+												<span class="bill_mid_span black">月基本费</span>
+												<span class="bill_small_span mar_left fl">电话包月费</span><span class="bill_small_span mar_left fr">-100.00</span>
+											</div>
+											<div class="bill_detail_left_list clearfix">
+												<span class="bill_mid_span black">短信彩信通信费</span>
+												<span class="bill_small_span mar_left fl">手机短信费</span><span class="bill_small_span mar_left fr">0.40</span>
+											</div>
+											<div class="bill_detail_left_list last_list clearfix">
+												<span class="bill_mid_span black">优惠赠送</span>
+												<span class="bill_small_span mar_left fl">赠金抵扣</span><span class="bill_small_span mar_left fr">-0.40</span>
+											</div>
+										</div>
+										<div class="bill_detail_right fl">
+											<div class="bill_detail_right_list clearfix">
+												<div class="bill_detail_right_box big_font fl">使用量项目</div>
+												<div class="bill_detail_right_box fl">上月结转量</div>
+												<div class="bill_detail_right_box fl">套餐包含量</div>
+												<div class="bill_detail_right_box fl">实际使用量</div>
+											</div>
+											<div class="bill_detail_right_list clearfix">
+												<span class="bill_mid_span black width_long fl">号码1：<em>18922719928</em></span>
+												<div class="bill_detail_right_box_list fl clearfix">
+													<div class="bill_detail_right_box gray_font fl">国内上网流量（KB）</div>
+													<div class="bill_detail_right_box gray_font fl"></div>
+													<div class="bill_detail_right_box gray_font fr"><em>3447137</em></div>
+													<div class="bill_detail_right_box gray_font fr">共享<em>4194304</em></div>
+												</div>
+												<div class="bill_detail_right_box_list fl clearfix">
+													<div class="bill_detail_right_box gray_font fl">国内通话时长（分钟）</div>
+													<div class="bill_detail_right_box gray_font fl"></div>
+													<div class="bill_detail_right_box gray_font fr"><em>270</em></div>
+													<div class="bill_detail_right_box gray_font fr">共享<em>1500</em></div>
+												</div>
+												
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="bill_detail_box_wrapper">
+									<div class="bill_detail_top clearfix">
+										<p class="pro_name fl">产品一：乐享4G201407-主套餐</p>
+										<p class="price fr">199.00</p>
+										<span class="phone_num fl">用户号码：移动号码：18922719928</span>
+									</div>
+									<div class="bill_detail_main clearfix">
+										<div class="bill_detail_left fl">
+											<div class="bill_detail_left_list clearfix">
+												<span class="bill_big_span fl">消费项目</span><span class="bill_mid_span fr">金额（元）</span>
+											</div>
+											<div class="bill_detail_left_list">
+												<span class="bill_mid_span black">套餐内费用</span>
+											</div>
+											<div class="bill_detail_left_list clearfix">
+												<span class="bill_mid_span black">套餐费用</span>
+												<span class="bill_small_span mar_left fl">乐享4G套餐</span><span class="bill_small_span mar_left fr">299.00</span>
+											</div>
+											<div class="bill_detail_left_list">
+												<span class="bill_mid_span black">套餐外费用</span>
+											</div>
+											<div class="bill_detail_left_list">
+												<span class="bill_small_span">移动号码：<em>18922719928</em></span>
+											</div>
+											<div class="bill_detail_left_list clearfix">
+												<span class="bill_mid_span black">月基本费</span>
+												<span class="bill_small_span mar_left fl">电话包月费</span><span class="bill_small_span mar_left fr">-100.00</span>
+											</div>
+											<div class="bill_detail_left_list clearfix">
+												<span class="bill_mid_span black">短信彩信通信费</span>
+												<span class="bill_small_span mar_left fl">手机短信费</span><span class="bill_small_span mar_left fr">0.40</span>
+											</div>
+											<div class="bill_detail_left_list last_list clearfix">
+												<span class="bill_mid_span black">优惠赠送</span>
+												<span class="bill_small_span mar_left fl">赠金抵扣</span><span class="bill_small_span mar_left fr">-0.40</span>
+											</div>
+										</div>
+										<div class="bill_detail_right fl">
+											<div class="bill_detail_right_list clearfix">
+												<div class="bill_detail_right_box big_font fl">使用量项目</div>
+												<div class="bill_detail_right_box fl">上月结转量</div>
+												<div class="bill_detail_right_box fl">套餐包含量</div>
+												<div class="bill_detail_right_box fl">实际使用量</div>
+											</div>
+											<div class="bill_detail_right_list clearfix">
+												<span class="bill_mid_span black width_long fl">号码1：<em>18922719928</em></span>
+												<div class="bill_detail_right_box_list fl clearfix">
+													<div class="bill_detail_right_box gray_font fl">国内上网流量（KB）</div>
+													<div class="bill_detail_right_box gray_font fl"></div>
+													<div class="bill_detail_right_box gray_font fr"><em>3447137</em></div>
+													<div class="bill_detail_right_box gray_font fr">共享<em>4194304</em></div>
+												</div>
+												<div class="bill_detail_right_box_list fl clearfix">
+													<div class="bill_detail_right_box gray_font fl">国内通话时长（分钟）</div>
+													<div class="bill_detail_right_box gray_font fl"></div>
+													<div class="bill_detail_right_box gray_font fr"><em>270</em></div>
+													<div class="bill_detail_right_box gray_font fr">共享<em>1500</em></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-	
+	<script src="../app/js/highcharts.js"></script>
 	<script>
 		$(function(){
 			var iFunctions = {};
@@ -42,6 +427,11 @@
 			iFunctions = {
 				init: function(){
 					iFunctions.tabsFuc();
+					iFunctions.add_phone_num();
+					iFunctions.choose_type();
+					iFunctions.toggle_modal();
+					iFunctions.browse_distribution();
+					iFunctions.autoScroll();
 				},
 				tabsFuc: function(){
 					var $nav_btn = $('.nav_btn');
@@ -54,6 +444,135 @@
 							$($(this).attr('data-show')).siblings().hide().end().show();
 						}
 					});
+				},
+				add_phone_num: function(){
+					$(document).on('click','.reduce',function(){
+						var phone_num=$(this).next().text();
+						
+						if(phone_num>=1){
+							var new_phone_num=phone_num-1;
+							$(this).next().text(new_phone_num);
+						}
+					})
+					$(document).on('click','.add',function(){
+						var phone_num=parseInt($(this).prev().text());
+						
+						if(phone_num>=0){
+							var new_phone_num=phone_num+1;
+							$(this).prev().text(new_phone_num);
+						}
+					})
+				},
+				choose_type: function(){
+					$(document).on('click','.renew_long_choose',function(){
+						$(this).addClass('active').siblings().removeClass('active');
+					})
+				},
+				toggle_modal: function(){
+					$(document).on('click','.closed',function(){
+						$('.bill_black_wrapper').addClass('hide');
+					})
+					$(document).on('click','.see_more',function(){
+						$('.bill_black_wrapper').removeClass('hide');
+					})
+				},
+				browse_distribution: function(){
+					$('#container').highcharts({
+				        chart: {
+				            type: 'bar'
+				        },
+				        title: {
+				            text: '上网浏览分布',
+				            align: 'left'
+				        },
+				        xAxis: {
+				            categories: ['影视', '游戏', '网购', '旅游', '音乐', '运动', '美食', '阅读'],
+				            title: {
+				                text: null
+				            },
+				            tickWidth:0,
+				            gridLineWidth: 0,
+				            lineWidth: 0
+				        },
+				        yAxis: {
+				            gridLineWidth: 0,
+				            lineWidth: 0,
+				            labels:{
+				                enabled:false
+				            },
+				            title:{
+				                enabled:false
+				            }
+				        },
+				        tooltip: {
+				            enabled: false
+				        },
+				        plotOptions: {
+				            bar: {
+				                dataLabels: {
+				                    enabled: true
+				                }
+				            },
+				            series: {
+				                borderWidth: 0,
+				                dataLabels: {
+				                    enabled: true,
+				                    format: '{point.y:.1f}%'
+				                }
+				            }
+				        },
+				        credits: {
+				            enabled: false
+				        },
+				        legend: {
+				            enabled: false
+				        },
+				        series: [{
+				            data : [{
+				                color : "#ffc435",
+				                y : 34
+				            }, {
+				                color : "#56cb06",
+				                y : 19
+				            },{
+				                color : "#56cb06",
+				                y : 17
+				            },{
+				                color : "#56cb06",
+				                y : 13
+				            },{
+				                color : "#56cb06",
+				                y : 12
+				            },{
+				                color : "#56cb06",
+				                y : 8
+				            },{
+				                color : "#56cb06",
+				                y : 6
+				            },{
+				                color : "#9a9a9a",
+				                y : 4
+				            },],
+				        }]
+				    });
+					$(document).on('mouseover','.highcharts-point',function(){
+						$(this).parents('.habit_box').next().removeClass('hide');
+					})
+					$(document).on('mouseleave','.highcharts-point',function(){
+						$(this).parents('.habit_box').next().addClass('hide');
+					})
+
+				},
+				autoScroll: function(obj){
+						
+						$(obj).find("ul").animate({  
+							marginTop : "-39px"  
+						},2000,function(){  
+							$(this).css({marginTop : "0px"}).find("li:first").appendTo(this);  
+						}) 
+
+						this.autoScroll(".ad_bottom");
+					
 				}
 			};
 
