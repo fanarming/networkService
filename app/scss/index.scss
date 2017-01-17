@@ -138,439 +138,437 @@ body {
         border-bottom-right-radius: 10px;
         border-bottom-left-radius: 10px;
         .coupon_box{
-                    padding-top: 40px;
-                    .habit_box{
-                        width: 456px;
-                        height: 340px;
-                        padding-left: 65px;
-                    }
-                    .right_box{
-                        width: 336px;
-                        height: 320px;
-                        margin-top: 52px;
-                        margin-left: 76px;
-                        overflow-y: auto;
+            padding-top: 40px;
+            .habit_box{
+                width: 456px;
+                height: 340px;
+                padding-left: 65px;
+            }
+            .right_box{
+                width: 336px;
+                height: 320px;
+                margin-top: 52px;
+                margin-left: 76px;
+                overflow-y: auto;
 
-                        .right_item_list{
-                            width: 292px;
-                            height: 143px;
-                            border: 1px solid #e0e0e0;
-                            background: #f8f8f8;
-                            border-radius: 8px;
-                            margin-bottom: 15px;
-                            .logo{
-                                margin: 20px;
-                                width: 100px;
-                                margin-bottom: 10px;
-                                height: 62px;
-                            }
-                            .num{
-                                font-size: 48px;
-                                color: #ff903c;
-                                margin-top: 20px;
-                                margin-right: 15px;
-                            }
-                            .ad{
-                                font-size: 16px;
-                                width: 166px;
-                                margin-left: 20px;
-                            }
-                            .usetime{
-                                font-size: 14px;
-                                color: #999999;
-                                line-height: 20px;
-                                width: 166px;
-                                margin-left: 20px;
-                            }
-                            .use_btn{
+                .right_item_list{
+                    width: 292px;
+                    height: 143px;
+                    border: 1px solid #e0e0e0;
+                    background: #f8f8f8;
+                    border-radius: 8px;
+                    margin-bottom: 15px;
+                    .logo{
+                        margin: 20px;
+                        width: 100px;
+                        margin-bottom: 10px;
+                        height: 62px;
+                    }
+                    .num{
+                        font-size: 48px;
+                        color: #ff903c;
+                        margin-top: 20px;
+                        margin-right: 15px;
+                    }
+                    .ad{
+                        font-size: 16px;
+                        width: 166px;
+                        margin-left: 20px;
+                    }
+                    .usetime{
+                        font-size: 14px;
+                        color: #999999;
+                        line-height: 20px;
+                        width: 166px;
+                        margin-left: 20px;
+                    }
+                    .use_btn{
+                        display: inline-block;
+                        width: 90px;
+                        height: 38px;
+                        line-height: 38px;
+                        text-align: center;
+                        background: #006bcf;
+                        color: #fff;
+                        border-radius: 8px;
+                        margin-right: 15px;
+                        margin-top: -20px
+                    }
+                }
+            }
+            .ad_bottom{
+                width: 100%;
+                height: 50px;
+                line-height: 50px;
+                border-top: 1px solid #e0e0e0;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                overflow: hidden;
+                ul{
+                    text-align: center;
+                    a{
+                        color: #999999;
+                    }
+                }
+            }
+        }
+        .package_type{
+            padding: 43px 65px;
+            .package_p{
+                font-size: 20px;
+                color: #666666;
+                margin-bottom: 18px;
+            }
+            .package_type_list{
+                margin-bottom: 20px;
+            }
+            .package_type_item{
+                width: 126px;
+                text-align: center;
+                margin-left: 32px;
+                margin-right: 51px;
+                .package_type_name{
+                    display: inline-block;
+                    color: #999999;
+                    font-size: 16px;
+                    margin-top: 14px;
+                }
+
+            }
+            .no_right{
+                margin-right: 0;
+            }
+        }
+
+        .single_renew{
+            padding: 33px 65px;
+            .single_renew_list{
+                margin-bottom: 34px;
+            }
+            .single_renew_item{
+                margin-bottom: 18px;
+                margin-right: 59px;
+                width: 365px;
+                line-height: 46px;
+                .single_renew_term{
+                    display: inline-block;
+                    height: 42px;
+                    line-height: 42px;
+                    font-size: 16px;
+                    color: #333333;
+                    width: 66px;
+                    margin-right: 40px;
+                }
+                .orange_span{
+                    display: inline-block;
+                    height: 42px;
+                    line-height: 42px;
+                    color: #ff6600;
+                    font-size: 18px;
+                }
+                .renew_long_choose{
+                    display: inline-block;
+                    height: 42px;
+                    line-height: 42px;
+                    border: 1px solid #cccccc;
+                    color: #999999;
+                    font-size: 16px;
+                    border-radius: 8px;
+                    background: #f8f8f8;
+                    width: 246px;
+                    cursor: pointer;
+                    margin-right: 15px;
+                    text-align: center;
+                }
+                .renew_short{
+                    width: 113px;
+                }
+                .renew_small{
+                    width: 70px;
+                }
+                .renew_mid{
+                    width: 120px;
+                }
+                .renew_btn{
+                    display: inline-block;
+                    width: 42px;
+                    height: 42px;
+                    border: 1px solid #cccccc;
+                    border-radius: 8px;
+                }
+                .reduce{
+                    background: url(../image/reduce.png) no-repeat 10px 20px; 
+                    background-color: #f8f8f8;                            
+                }
+                .add{
+                    background: url(../image/add.png) no-repeat 10px 10px; 
+                    background-color: #f8f8f8;
+                }
+                .renew_span{
+                    display: inline-block;
+                    width: 67px;
+                    height: 42px;
+                    line-height: 42px;
+                    border: 1px solid #cccccc; 
+                    background: #fff;
+                    text-align: center;
+                    border-radius: 8px;
+                    color: #999999;
+                    margin-left: 6px;
+                    margin-right: 6px;
+                }
+                .no_right{
+                    margin-right: 0;
+                }
+                .active{
+                    color: #006bcf;
+                    border: 2px solid #006bcf;
+                    position: relative;
+                    background: #fff;
+                    &:after{
+                        content:'';
+                        position: absolute;
+                        right: -2px;
+                        bottom: -2px;
+                        width: 26px;
+                        height: 25px;
+                        background: url(../image/checked.png) no-repeat;
+                    };
+                    
+                }
+                .select_phone{
+                    width: 250px;
+                    height: 42px;
+                    line-height: 42px;
+                    border: 1px solid #cccccc;
+                    border-radius: 8px;
+                    text-indent: 60px;
+                    font-size: 16px;
+                    color: #999999;
+                    background: url(../image/select.png) no-repeat 186px center;
+                    background-color: #f8f8f8;
+                }
+            }
+            .long_item{
+                width: 100%;
+            }
+            .right_item{
+                margin-right: 0;
+            }
+            .single_renew_btn{
+                width: 100%;
+                text-align: center;
+                .continue{
+                    display: inline-block;
+                    width: 193px;
+                    height: 50px;
+                    background: #006bcf;
+                    line-height: 50px;
+                    text-align: center;
+                    font-size: 24px;
+                    color: #fff;
+                    border-radius: 8px;
+                    margin-right: 11px;
+                }
+                .only{
+                    color: #999999;
+                }
+            }
+        }
+        .increase_speed{
+            padding: 70px 95px;
+            text-align: center;
+            .big_p{
+                font-size: 48px;
+                color: #333333;
+                em{
+                    color: #006bcf;
+                }
+            }
+            .increase_speed_step{
+                margin-top: 48px;
+                .step_item{
+                    width: 126px;
+                    .step_item_name{
+                        margin-top: 18px;
+                        span{
+                            font-size: 20px;
+                            color: #333333;
+                            margin-left: 8px;
+                        }
+                        img{
+                            margin-top: -3px;
+                        }
+                    }
+                }
+                .step_icon{
+                    height: 126px;
+                    margin-left: 23px;
+                    margin-right: 23px;
+                    img{
+                        margin-top: 52px;
+                    }
+                }
+            }
+            .speed_btn{
+                margin-top: 38px;
+                a{
+                    display: inline-block;
+                    width: 193px;
+                    height: 50px;
+                    background: #006bcf;
+                    line-height: 50px;
+                    text-align: center;
+                    font-size: 24px;
+                    color: #fff;
+                    border-radius: 8px;
+                }
+            }
+        }
+        .dan_bill{
+            .bill_box{
+                padding: 0 65px;
+                padding-top: 42px;
+                .bill_box_list{
+                    margin-bottom: 26px;
+                    .bill_name{
+                        color: #666666;
+                        margin-right: 29px;
+                    }
+                    .bill_name_item{
+                        color: #000;
+                    }
+                }
+                .cost_p{
+                    font-size: 28px;
+                    color: #333333;
+                    margin-bottom: 20px;
+                    em{
+                        color: #ff6600;
+                        font-weight: 500;
+                    }
+                }
+                .cost_box{
+                    .cost_box_left{
+                        padding-right: 120px;
+                        padding-left: 15px;
+                        padding-top: 12px;
+                        height: 170px;
+                        border-right: 1px solid #dddddd;
+                        position: relative;
+                        .cost_box_list{
+                            margin-bottom: 20px;
+                    
+                            .bill_name{
                                 display: inline-block;
-                                width: 90px;
-                                height: 38px;
-                                line-height: 38px;
-                                text-align: center;
+                                color: #666666;
+                                margin-right: 46px;
+                                width: 96px;
+                            }
+                            .bill_item{
+                                font-weight: bold;
+                            }
+                            .orange{
+                                color: #ff6600;
+                            }
+                        }
+                        .cost_box_left_btn{
+                            position: absolute;
+                            bottom: 0;
+                            left: 25%;
+                            .recharge_btn{
+                                display: inline-block;
+                                width: 94px;
+                                height: 40px;
+                                line-height: 40px;
                                 background: #006bcf;
                                 color: #fff;
-                                border-radius: 8px;
-                                margin-right: 15px;
-                                margin-top: -20px
-                            }
-                        }
-                    }
-                    .ad_bottom{
-                        width: 100%;
-                        height: 50px;
-                        line-height: 50px;
-                        border-top: 1px solid #e0e0e0;
-                        position: absolute;
-                        bottom: 0;
-                        left: 0;
-                        overflow: hidden;
-                        ul{
-                            text-align: center;
-                            a{
-                                color: #999999;
-                            }
-                        }
-                    }
-                }
-                
-
-                .package_type{
-                    padding: 43px 65px;
-                    .package_p{
-                        font-size: 20px;
-                        color: #666666;
-                        margin-bottom: 18px;
-                    }
-                    .package_type_list{
-                        margin-bottom: 20px;
-                    }
-                    .package_type_item{
-                        width: 126px;
-                        text-align: center;
-                        margin-left: 32px;
-                        margin-right: 51px;
-                        .package_type_name{
-                            display: inline-block;
-                            color: #999999;
-                            font-size: 16px;
-                            margin-top: 14px;
-                        }
-
-                    }
-                    .no_right{
-                        margin-right: 0;
-                    }
-                }
-
-                .single_renew{
-                    padding: 33px 65px;
-                    .single_renew_list{
-                        margin-bottom: 34px;
-                    }
-                    .single_renew_item{
-                        margin-bottom: 18px;
-                        margin-right: 59px;
-                        width: 365px;
-                        line-height: 46px;
-                        .single_renew_term{
-                            display: inline-block;
-                            height: 42px;
-                            line-height: 42px;
-                            font-size: 16px;
-                            color: #333333;
-                            width: 66px;
-                            margin-right: 40px;
-                        }
-                        .orange_span{
-                            display: inline-block;
-                            height: 42px;
-                            line-height: 42px;
-                            color: #ff6600;
-                            font-size: 18px;
-                        }
-                        .renew_long_choose{
-                            display: inline-block;
-                            height: 42px;
-                            line-height: 42px;
-                            border: 1px solid #cccccc;
-                            color: #999999;
-                            font-size: 16px;
-                            border-radius: 8px;
-                            background: #f8f8f8;
-                            width: 246px;
-                            cursor: pointer;
-                            margin-right: 15px;
-                            text-align: center;
-                        }
-                        .renew_short{
-                            width: 113px;
-                        }
-                        .renew_small{
-                            width: 70px;
-                        }
-                        .renew_mid{
-                            width: 120px;
-                        }
-                        .renew_btn{
-                            display: inline-block;
-                            width: 42px;
-                            height: 42px;
-                            border: 1px solid #cccccc;
-                            border-radius: 8px;
-                        }
-                        .reduce{
-                            background: url(../image/reduce.png) no-repeat 10px 20px; 
-                            background-color: #f8f8f8;                            
-                        }
-                        .add{
-                            background: url(../image/add.png) no-repeat 10px 10px; 
-                            background-color: #f8f8f8;
-                        }
-                        .renew_span{
-                            display: inline-block;
-                            width: 67px;
-                            height: 42px;
-                            line-height: 42px;
-                            border: 1px solid #cccccc; 
-                            background: #fff;
-                            text-align: center;
-                            border-radius: 8px;
-                            color: #999999;
-                            margin-left: 6px;
-                            margin-right: 6px;
-                        }
-                        .no_right{
-                            margin-right: 0;
-                        }
-                        .active{
-                            color: #006bcf;
-                            border: 2px solid #006bcf;
-                            position: relative;
-                            background: #fff;
-                            &:after{
-                                content:'';
-                                position: absolute;
-                                right: -2px;
-                                bottom: -2px;
-                                width: 26px;
-                                height: 25px;
-                                background: url(../image/checked.png) no-repeat;
-                            };
-                            
-                        }
-                        .select_phone{
-                            width: 250px;
-                            height: 42px;
-                            line-height: 42px;
-                            border: 1px solid #cccccc;
-                            border-radius: 8px;
-                            text-indent: 60px;
-                            font-size: 16px;
-                            color: #999999;
-                            background: url(../image/select.png) no-repeat 186px center;
-                            background-color: #f8f8f8;
-                        }
-                    }
-                    .long_item{
-                        width: 100%;
-                    }
-                    .right_item{
-                        margin-right: 0;
-                    }
-                    .single_renew_btn{
-                        width: 100%;
-                        text-align: center;
-                        .continue{
-                            display: inline-block;
-                            width: 193px;
-                            height: 50px;
-                            background: #006bcf;
-                            line-height: 50px;
-                            text-align: center;
-                            font-size: 24px;
-                            color: #fff;
-                            border-radius: 8px;
-                            margin-right: 11px;
-                        }
-                        .only{
-                            color: #999999;
-                        }
-                    }
-                }
-                .increase_speed{
-                    padding: 70px 95px;
-                    text-align: center;
-                    .big_p{
-                        font-size: 48px;
-                        color: #333333;
-                        em{
-                            color: #006bcf;
-                        }
-                    }
-                    .increase_speed_step{
-                        margin-top: 48px;
-                        .step_item{
-                            width: 126px;
-                            .step_item_name{
-                                margin-top: 18px;
-                                span{
-                                    font-size: 20px;
-                                    color: #333333;
-                                    margin-left: 8px;
-                                }
-                                img{
-                                    margin-top: -3px;
-                                }
-                            }
-                        }
-                        .step_icon{
-                            height: 126px;
-                            margin-left: 23px;
-                            margin-right: 23px;
-                            img{
-                                margin-top: 52px;
-                            }
-                        }
-                    }
-                    .speed_btn{
-                        margin-top: 38px;
-                        a{
-                            display: inline-block;
-                            width: 193px;
-                            height: 50px;
-                            background: #006bcf;
-                            line-height: 50px;
-                            text-align: center;
-                            font-size: 24px;
-                            color: #fff;
-                            border-radius: 8px;
-                        }
-                    }
-                }
-                .dan_bill{
-                    .bill_box{
-                        padding: 0 65px;
-                        padding-top: 42px;
-                        .bill_box_list{
-                            margin-bottom: 26px;
-                            .bill_name{
-                                color: #666666;
-                                margin-right: 29px;
-                            }
-                            .bill_name_item{
-                                color: #000;
-                            }
-                        }
-                        .cost_p{
-                            font-size: 28px;
-                            color: #333333;
-                            margin-bottom: 20px;
-                            em{
-                                color: #ff6600;
-                                font-weight: 500;
-                            }
-                        }
-                        .cost_box{
-                            .cost_box_left{
-                                padding-right: 120px;
-                                padding-left: 15px;
-                                padding-top: 12px;
-                                height: 170px;
-                                border-right: 1px solid #dddddd;
-                                position: relative;
-                                .cost_box_list{
-                                    margin-bottom: 20px;
-                            
-                                    .bill_name{
-                                        display: inline-block;
-                                        color: #666666;
-                                        margin-right: 46px;
-                                        width: 96px;
-                                    }
-                                    .bill_item{
-                                        font-weight: bold;
-                                    }
-                                    .orange{
-                                        color: #ff6600;
-                                    }
-                                }
-                                .cost_box_left_btn{
-                                    position: absolute;
-                                    bottom: 0;
-                                    left: 25%;
-                                    .recharge_btn{
-                                        display: inline-block;
-                                        width: 94px;
-                                        height: 40px;
-                                        line-height: 40px;
-                                        background: #006bcf;
-                                        color: #fff;
-                                        text-align: center;
-                                        border-radius: 8px;
-                                    }
-                                }
-                            }
-                            .cost_box_right{
-                                padding-left: 120px;
-                                padding-top: 12px;
-                                height: 170px;
-                                position: relative;
-                                .cost_box_list{
-                                    margin-bottom: 20px;
-                                }
-                                .bill_name{
-                                    color: #666666;
-                                    margin-right: 50px;
-                                }
-                                .bill_item{
-                                    font-weight: bold;
-                                    margin-right: 47px;
-                                }
-                                .cost_box_right_btn{
-                                    position: absolute;
-                                    bottom: 0;
-                                    left: 50%;
-                                    .see_more{
-                                        display: inline-block;
-                                        width: 94px;
-                                        height: 40px;
-                                        line-height: 40px;
-                                        background: #006bcf;
-                                        color: #fff;
-                                        text-align: center;
-                                        border-radius: 8px;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    .bill_bottom{
-                        position: absolute;
-                        bottom: 0;
-                        height: 134px;
-                        width: 100%;
-                        border-top: 1px solid #dddddd;
-                        background: #f8f8f8;
-                        padding: 0 65px;
-                        .bill_bottom_left{
-                            padding-top: 21px;
-                            width: 183px;
-                            margin-right: 66px;
-                            span{
-                                font-size: 26px;
-                                color: #5cb966;
-                            }
-                            .ad_btn{
                                 text-align: center;
-                                margin-top: 20px;
-                                width: 100%;
-                                .gift_btn{
-                                    display: inline-block;
-                                    width: 123px;
-                                    height: 30px;
-                                    line-height: 30px;
-                                    background: #5cb966;
-                                    text-align: center;
-                                    color: #fff;
-                                    border-radius: 8px;
-                                }
-                            }
-                        }
-                        .bill_bottom_right{
-                            padding-top: 18px;
-                            .ad_box{
-                                margin-right: 20px;
+                                border-radius: 8px;
                             }
                         }
                     }
-                    .duo_bill_bottom{
-                        background: #fff;
-                        padding: 0;
-                        margin: 0 65px;
-                        width: 849px;
+                    .cost_box_right{
+                        padding-left: 120px;
+                        padding-top: 12px;
+                        height: 170px;
+                        position: relative;
+                        .cost_box_list{
+                            margin-bottom: 20px;
+                        }
+                        .bill_name{
+                            color: #666666;
+                            margin-right: 50px;
+                        }
+                        .bill_item{
+                            font-weight: bold;
+                            margin-right: 47px;
+                        }
+                        .cost_box_right_btn{
+                            position: absolute;
+                            bottom: 0;
+                            left: 50%;
+                            .see_more{
+                                display: inline-block;
+                                width: 94px;
+                                height: 40px;
+                                line-height: 40px;
+                                background: #006bcf;
+                                color: #fff;
+                                text-align: center;
+                                border-radius: 8px;
+                            }
+                        }
                     }
                 }
+            }
+            .bill_bottom{
+                position: absolute;
+                bottom: 0;
+                height: 134px;
+                width: 100%;
+                border-top: 1px solid #dddddd;
+                background: #f8f8f8;
+                padding: 0 65px;
+                .bill_bottom_left{
+                    padding-top: 21px;
+                    width: 183px;
+                    margin-right: 66px;
+                    span{
+                        font-size: 26px;
+                        color: #5cb966;
+                    }
+                    .ad_btn{
+                        text-align: center;
+                        margin-top: 20px;
+                        width: 100%;
+                        .gift_btn{
+                            display: inline-block;
+                            width: 123px;
+                            height: 30px;
+                            line-height: 30px;
+                            background: #5cb966;
+                            text-align: center;
+                            color: #fff;
+                            border-radius: 8px;
+                        }
+                    }
+                }
+                .bill_bottom_right{
+                    padding-top: 18px;
+                    .ad_box{
+                        margin-right: 20px;
+                    }
+                }
+            }
+            .duo_bill_bottom{
+                background: #fff;
+                padding: 0;
+                margin: 0 65px;
+                width: 849px;
+            }
+        }
                 
     }
 
@@ -1221,6 +1219,8 @@ body {
     .package_cont {
         padding-left: 98px;
         margin-top: 75px;
+        overflow-y: auto;
+        height: 134px;
 
         &_list {
             width: 405px;
@@ -1256,6 +1256,21 @@ body {
                 }
             }
         }
+        .package_cont_li{
+            height: 134px;
+        }
+        /* .package_cont_ul{
+            height: 134px;
+            overflow-y: auto;
+            overflow: hidden;
+            .package_cont_li{
+                margin-bottom: 10px;
+                height: 134px;
+            }
+        } */
+    }
+    .no_renew_cont{
+        height: 134px;
     }
 }
 
@@ -1559,132 +1574,171 @@ body {
 }
 
 .bill_black_wrapper{
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    right: 0;
-                    bottom: 0;
-                    background: rgba(0,0,0,.8);
-                    .bill_wrap{
-                        position: absolute;
-                        left: 50%;
-                        top: 50%;
-                        margin-left: -454px;
-                        margin-top: -302px;
-                        width: 908px;
-                        height: 605px;
-                        background: #fff;
-                        border-radius: 10px;
-                        overflow: hidden;
-                        .closed{
-                            position: absolute;
-                            right: 20px;
-                            top: 20px;
-                            cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.8);
+    .bill_wrap{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -454px;
+        margin-top: -302px;
+        width: 908px;
+        height: 605px;
+        background: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        .closed{
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            cursor: pointer;
+        }
+        .bill_detail_box{
+            margin: 38px 58px;
+            border-left: 1px solid #dddddd;
+            overflow-y: auto;
+            height: 522px;
+            .bill_detail_top{
+                border-bottom: 1px solid #dddddd;
+                border-right: 1px solid #dddddd;
+                width: 723px;
+                padding: 0 20px;
+                .pro_name{
+                    font-size: 20px;
+                    width: 545px;
+                    line-height: 25px;
+                    margin-bottom: 20px;
+                    margin-top: 17px;
+                }
+                .phone_num{
+                    font-size: 14px;
+                    color: #aea9a9;
+                    width: 545px;
+                    margin-bottom: 20px;
+                }
+                .price{
+                    font-size: 48px;
+                    color: #ff324a;
+                    margin-top: 15px;
+                }
+            }
+            .bill_detail_main{
+                width: 763px;
+                border-bottom: 1px solid #dddddd;
+                border-right: 1px solid #dddddd;
+                .bill_detail_left{
+                    border-right: 1px solid #dddddd;
+                    width: 292px;
+                    .bill_detail_left_list{
+                        border-bottom: 1px solid #dddddd;
+                        padding: 10px 20px;
+                        .bill_big_span{
+                            display: inline-block;
+                            font-size: 18px;
+                            padding-top: 5px;
+                            padding-bottom: 5px;
                         }
-                        .bill_detail_box{
-                            margin: 38px 58px;
-                            border-left: 1px solid #dddddd;
-                            overflow-y: auto;
-                            height: 522px;
-                            .bill_detail_top{
-                                border-bottom: 1px solid #dddddd;
-                                border-right: 1px solid #dddddd;
-                                width: 723px;
-                                padding: 0 20px;
-                                .pro_name{
-                                    font-size: 20px;
-                                    width: 545px;
-                                    line-height: 25px;
-                                    margin-bottom: 20px;
-                                    margin-top: 17px;
-                                }
-                                .phone_num{
-                                    font-size: 14px;
-                                    color: #aea9a9;
-                                    width: 545px;
-                                    margin-bottom: 20px;
-                                }
-                                .price{
-                                    font-size: 48px;
-                                    color: #ff324a;
-                                    margin-top: 15px;
-                                }
+                        .bill_mid_span{
+                            display: inline-block;
+                            font-size: 16px;
+                            color: #9797aa;
+                            padding-top: 5px;
+                            padding-bottom: 5px;
+                        }
+                        .black{
+                            color: #000;
+                            padding-top: 0;
+                            padding-bottom: 0; 
+                            width: 100%;
+                            font-weight: 500;
+                        }
+                        .bill_small_span{
+                            display: inline-block;
+                            color: #757575;
+                            em{
+                                border-bottom: 1px dashed #9797aa;
                             }
-                            .bill_detail_main{
-                                width: 763px;
-                                border-bottom: 1px solid #dddddd;
-                                border-right: 1px solid #dddddd;
-                                .bill_detail_left{
-                                    border-right: 1px solid #dddddd;
-                                    width: 292px;
-                                    .bill_detail_left_list{
-                                        border-bottom: 1px solid #dddddd;
-                                        padding: 10px 20px;
-                                        .bill_big_span{
-                                            display: inline-block;
-                                            font-size: 18px;
-                                            padding-top: 5px;
-                                            padding-bottom: 5px;
-                                        }
-                                        .bill_mid_span{
-                                            display: inline-block;
-                                            font-size: 16px;
-                                            color: #9797aa;
-                                            padding-top: 5px;
-                                            padding-bottom: 5px;
-                                        }
-                                        .black{
-                                            color: #000;
-                                            padding-top: 0;
-                                            padding-bottom: 0; 
-                                            width: 100%;
-                                            font-weight: 500;
-                                        }
-                                        .bill_small_span{
-                                            display: inline-block;
-                                            color: #757575;
-                                            em{
-                                                border-bottom: 1px dashed #9797aa;
-                                            }
-                                        }
-                                        .mar_left{
-                                            margin-left: 26px;
-                                            margin-top: 12px;
-                                        }
-                                    }
-                                    .last_list{
-                                        border-bottom: 0;
-                                    }
-                                }
-                                .bill_detail_right{
-                                    width: 470px;
-                                    .bill_detail_right_list{
-                                        border-bottom: 1px solid #dddddd;
-                                        padding: 15px 20px;
-                                        em{
-                                            border-bottom: 1px dashed #9797aa; 
-                                        }
-                                        .bill_detail_right_box{
-                                            width: 107px;
-                                            font-size: 14px;
-                                            line-height: 20px;
-                                        }
-                                        .big_font{
-                                            font-size: 18px;
-                                        }
-                                        .width_long{
-                                            width: 100%;
-                                        }
-                                        .gray_font{
-                                            color: #757575;
-                                        }
-                                        .bill_detail_right_box_list{
-                                            margin-top: 12px;
-                                        }
-                                    }
-                                }
-                            }
+                        }
+                        .mar_left{
+                            margin-left: 26px;
+                            margin-top: 12px;
+                        }
+                    }
+                    .last_list{
+                        border-bottom: 0;
+                    }
+                }
+                .bill_detail_right{
+                    width: 470px;
+                    .bill_detail_right_list{
+                        border-bottom: 1px solid #dddddd;
+                        padding: 15px 20px;
+                        em{
+                            border-bottom: 1px dashed #9797aa; 
+                        }
+                        .bill_detail_right_box{
+                            width: 107px;
+                            font-size: 14px;
+                            line-height: 20px;
+                        }
+                        .big_font{
+                            font-size: 18px;
+                        }
+                        .width_long{
+                            width: 100%;
+                        }
+                        .gray_font{
+                            color: #757575;
+                        }
+                        .bill_detail_right_box_list{
+                            margin-top: 12px;
                         }
                     }
                 }
+            }
+        }
+    }
+}
+.share_black{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.8);
+    z-index: 99;
+    .code_box{
+        width: 308px;
+        height: 388px;
+        background: #fff;
+        margin: auto;
+        margin-top: 12%;
+        position: relative;
+        text-align: center;
+        .closed_code{
+            display: inline-block;
+            position: absolute;
+            right: 12px;
+            top: 12px;
+        }
+        .code_tittle{
+            width: 100%;
+            text-align: center;
+            margin-top: 26px;
+            font-size: 20px;
+        }
+        .code_img{
+            margin-top: 24px;
+            margin-left: 26px;
+        }
+        p{
+            width: 100%;
+            text-align: center;
+            line-height: 25px;
+        }
+    }
+}
