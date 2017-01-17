@@ -4,68 +4,140 @@
 		"selected_items":
 		[
 			[
-				"pad",
-				"padding-top"
+				"back",
+				"background"
 			],
 			[
-				"user",
-				"user_info_editing"
+				"im",
+				"imgList"
 			],
 			[
-				"te",
-				"text-align"
+				"img",
+				"imgArr"
+			],
+			[
+				"p",
+				"preloadimages"
+			],
+			[
+				"prev",
+				"preventDefault"
+			],
+			[
+				"retur",
+				"return_btn"
+			],
+			[
+				"swi",
+				"swipeFuc"
 			],
 			[
 				"text",
-				"text-indent"
+				"text-align"
+			],
+			[
+				"bac",
+				"background-size"
+			],
+			[
+				"no",
+				"nowrap"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"pa",
+				"padding-left"
+			],
+			[
+				"data",
+				"data-order"
+			],
+			[
+				"rend",
+				"renderOrdertHtml"
+			],
+			[
+				"goo",
+				"goodsList"
+			],
+			[
+				"daa",
+				"dataArr"
+			],
+			[
+				"arti",
+				"articleUrl"
+			],
+			[
+				"key",
+				"keyWord"
+			],
+			[
+				"tba",
+				"tabId"
+			],
+			[
+				"tab",
+				"tabId"
+			],
+			[
+				"nu",
+				"numPerPage"
+			],
+			[
+				"index",
+				"indexOf"
+			],
+			[
+				"_html",
+				"_htmlCont"
+			],
+			[
+				"fil",
+				"fileName"
+			],
+			[
+				"tpe",
+				"typeTips"
+			],
+			[
+				"si",
+				"sizeTips"
+			],
+			[
+				"ba",
+				"background-size"
+			],
+			[
+				"np",
+				"no-repeat"
 			],
 			[
 				"margin",
 				"margin-bottom"
 			],
 			[
-				"fonts-",
-				"font-size"
+				"bord",
+				"border-right"
 			],
 			[
-				"fotn-s",
-				"font-size"
+				"te",
+				"text-align"
 			],
 			[
-				"sl",
-				"slideUp	.slideUp()"
+				"pad",
+				"padding-top"
 			],
 			[
-				"close",
-				"closeModal"
+				"types",
+				"name_types"
 			],
 			[
-				"font",
-				"font-family"
-			],
-			[
-				"bac",
-				"background"
-			],
-			[
-				"fon",
-				"font-family"
-			],
-			[
-				"inlni",
-				"inline-block"
-			],
-			[
-				"tab",
-				"tabsFuc"
-			],
-			[
-				"border",
-				"border"
-			],
-			[
-				"toggl",
-				"toggleClass	.toggleClass()"
+				"prov",
+				"prov_id"
 			],
 			[
 				"man",
@@ -120,10 +192,6 @@
 				"content"
 			],
 			[
-				"max",
-				"max-height"
-			],
-			[
 				"wri",
 				"write_wrp"
 			],
@@ -158,10 +226,6 @@
 			[
 				"re",
 				"return"
-			],
-			[
-				"img",
-				"imgTextIndex"
 			],
 			[
 				"pos",
@@ -208,6 +272,10 @@
 				"black_bac"
 			],
 			[
+				"border",
+				"border-top"
+			],
+			[
 				"tex",
 				"text-align"
 			],
@@ -232,12 +300,12 @@
 				"margin"
 			],
 			[
-				"no",
-				"no-repeat"
-			],
-			[
 				"mrgin",
 				"margin-right"
+			],
+			[
+				"font",
+				"font-size"
 			],
 			[
 				"r",
@@ -248,20 +316,8 @@
 				"insertHtml"
 			],
 			[
-				"pa",
-				"padding-top"
-			],
-			[
-				"back",
-				"background"
-			],
-			[
 				"share",
 				"share_wrapper"
-			],
-			[
-				"ba",
-				"bacWrapper"
 			],
 			[
 				"padd",
@@ -340,6 +396,10 @@
 				"apply_save_modal"
 			],
 			[
+				"fon",
+				"font-size"
+			],
+			[
 				"marign",
 				"margin-right"
 			],
@@ -408,10 +468,6 @@
 				"nav_secondAjax"
 			],
 			[
-				"si",
-				"siblings	.siblings()"
-			],
-			[
 				"sec",
 				"nav_second"
 			],
@@ -458,62 +514,6 @@
 			[
 				"inlin",
 				"inline-block"
-			],
-			[
-				"bord",
-				"border"
-			],
-			[
-				"tran",
-				"transform"
-			],
-			[
-				"tra",
-				"transition"
-			],
-			[
-				"margin-",
-				"margin-left"
-			],
-			[
-				"fun",
-				"function"
-			],
-			[
-				"pull",
-				"pull_loading"
-			],
-			[
-				"remove",
-				"removeClass	.removeClass()"
-			],
-			[
-				"inline",
-				"inline-block"
-			],
-			[
-				"se",
-				"search_wrapper"
-			],
-			[
-				"line",
-				"line-height"
-			],
-			[
-				"has",
-				"hasClass	.hasClass()"
-			],
-			[
-				"sli",
-				"slideUp	.slideUp()"
-			],
-			[
-				"$",
-				"$bac_modal"
-			],
-			[
-				"pd",
-				"padding-top"
 			]
 		]
 	},
@@ -565,59 +565,76 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/zuzhaungji/Desktop/networkService"
+		"/C/Users/zuzhaungji/Desktop/network2"
 	],
 	"file_history":
 	[
-		"/C/Users/zuzhaungji/Desktop/networkService/app/scss/index.scss",
-		"/C/Users/zuzhaungji/Desktop/networkService/view/index.html",
-		"/C/Users/zuzhaungji/Desktop/新建文件夹/networkService/package.json",
-		"/C/Users/zuzhaungji/Desktop/构建环境/gulpfile.js",
-		"/C/Users/zuzhaungji/Desktop/yunos/app/scss/login.scss",
-		"/C/Users/zuzhaungji/Desktop/chudian/gulpfile.js",
-		"/C/Users/zuzhaungji/Desktop/zdx_cg/gulpfile.js",
-		"/C/Users/zuzhaungji/Desktop/chudian/view/normal/basic_info_unchecked.html",
-		"/C/Users/zuzhaungji/Desktop/yunos/view/qunfa/publish.html",
-		"/C/Users/zuzhaungji/Desktop/yunos/view/publish.html",
+		"/C/Users/zuzhaungji/Desktop/zdx_cg/topic/christmas/2016/christmas.html",
+		"/C/Users/zuzhaungji/Desktop/zdx_cg/app/css/list_article2.css",
+		"/C/Users/zuzhaungji/Desktop/zdx_cg/api/goodsNewList.json",
+		"/C/Users/zuzhaungji/Desktop/zdx_cg/api/goodsListPage.json",
+		"/C/Users/zuzhaungji/Desktop/zdx_cg/app/scss/list_article2.scss",
+		"/C/Users/zuzhaungji/Desktop/zdx_cg/app/scss/index_article.scss",
+		"/C/Users/zuzhaungji/Desktop/zdx_cg/api/Classify.json",
+		"/C/Users/zuzhaungji/Desktop/zdx_cg/api/typeList.json",
+		"/C/Users/zuzhaungji/Desktop/zdx_cg/newindex/list_all.html",
 		"/C/Users/zuzhaungji/Desktop/zdx_cg/topic/year_end_sales/year_end_sales.html",
-		"/C/Users/zuzhaungji/Desktop/yunos/app/js/ueditor/1.4.3/index.html",
-		"/C/Users/zuzhaungji/Desktop/kdfwc/gulpfile.js",
-		"/C/Users/zuzhaungji/Desktop/networkService/app/scss/common.scss",
-		"/C/Users/zuzhaungji/Desktop/dxzw/vip/gulpfile.js",
-		"/C/Users/zuzhaungji/Desktop/chudian/view/normal/apply.html",
-		"/C/Users/zuzhaungji/Desktop/yunos/partials/main_nav.html",
+		"/C/Users/zuzhaungji/Desktop/zdx_cg/newindex/page_article.html",
+		"/C/Users/zuzhaungji/Desktop/zdx_cg/app/css/index_article.css",
 		"/C/Users/zuzhaungji/Desktop/yunos/gulpfile.js",
-		"/C/Users/zuzhaungji/Desktop/yunos/dist/qunfa/publish.html",
-		"/C/Users/zuzhaungji/Desktop/yunos/partials/header.html",
-		"/C/Users/zuzhaungji/Desktop/zdx_cg/test/test.html",
-		"/F/study/utils/地址级联/级联二-可定制/地址级联二.html",
+		"/F/study/utils/上传附件大小限制/uploadSize.js",
+		"/F/study/utils/模板写法/template.js",
+		"/F/study/utils/地址级联/load_cities.js",
+		"/C/Users/zuzhaungji/Desktop/list_article2.scss",
+		"/F/study/utils/上传附件大小限制/上传附件大小限制.html",
+		"/F/study/utils/地址级联/cities.js",
+		"/C/Users/zuzhaungji/Desktop/zdx_cg/topic/christmas/2016/christmas_card.html",
+		"/C/Users/zuzhaungji/Desktop/zdx_cg/app/css/christmas_2016.css",
+		"/C/Users/zuzhaungji/Desktop/zdx_cg/app/scss/christmas_2016.scss",
+		"/C/Users/zuzhaungji/Desktop/zdx_cg/topic/christmas/2016/christmas_coupon.html",
+		"/C/Users/zuzhaungji/Desktop/zdx_cg/topic/christmas/2016/christmas_preview.html",
+		"/C/Users/zuzhaungji/Desktop/zdx_cg/app/js/swipe.js",
+		"/C/Users/zuzhaungji/Desktop/yunos/app/js/ueditor/1.4.3/php/config.json",
+		"/C/Users/zuzhaungji/Desktop/yunos/app/js/ueditor/1.4.3/index.html",
+		"/C/Users/zuzhaungji/Desktop/yunos/view/publish.html",
+		"/C/Users/zuzhaungji/Desktop/zdx_cg/app/scss/year_end_sales_2016.scss",
+		"/C/Users/zuzhaungji/Desktop/area_chs.js",
+		"/C/Users/zuzhaungji/Desktop/zdx_cg/app/css/year_end_sales_2016.css",
+		"/C/Users/zuzhaungji/Desktop/zdx_cg/app/js/lib/jquery.lazyload.js",
+		"/C/Users/zuzhaungji/Desktop/zdx_cg/app/js/lib/jquery.js",
+		"/E/fgm_project/电信/src/less/reset.scss",
+		"/E/fgm_project/电信统一触点管理平台/改/普通人员/app/css/common.css",
+		"/F/study/utils/图片上传预览/upload_img_preview.js",
+		"/F/study/utils/图片上传预览/上传图片预览.html",
+		"/C/Users/zuzhaungji/Desktop/普通人员/dist/normal/apply.html",
+		"/C/Users/zuzhaungji/Desktop/普通人员/dist/normal/modal.html",
 		"/F/study/utils/地址级联/级联二-可定制/jquery.cityselect.js",
+		"/C/Users/zuzhaungji/Desktop/超级20161226/超级/app/css/person_manage.css",
+		"/C/Users/zuzhaungji/Desktop/超级20161226/超级/dist/super/person_manage.html",
+		"/C/Users/zuzhaungji/Desktop/普通人员/dist/normal/login/login.html",
+		"/C/Users/zuzhaungji/Desktop/普通人员/app/css/login.css",
+		"/F/study/utils/地址级联/级联二-可定制/地址级联二.html",
+		"/C/Users/zuzhaungji/Desktop/级联二-可定制/city.min.js",
+		"/F/study/utils/地址级联/级联二-可定制/city.min.js",
+		"/F/study/utils/css3动画插件/98/index.html",
 		"/F/study/utils/css3动画插件/98/animate.min.css",
 		"/C/Users/zuzhaungji/Desktop/data.json",
-		"/F/study/utils/地址级联/级联二-可定制/city.min.js",
-		"/F/study/utils/图片上传预览/上传图片预览.html",
-		"/F/study/utils/图片上传预览/upload_img_preview.js",
 		"/F/study/utils/图片上传预览/premage.min.js",
 		"/F/study/utils/图片上传预览/premage.min.css",
-		"/C/Users/zuzhaungji/Desktop/zdx_cg/topic/christmas/2016/christmas_coupon.html",
-		"/C/Users/zuzhaungji/Desktop/zdx_cg/app/css/christmas_2016.css",
 		"/C/Users/zuzhaungji/Desktop/zdx_cg/api/coupon.json",
 		"/C/Users/zuzhaungji/Desktop/yunos/app/js/ueditor/1.4.3/ueditor.config.js",
-		"/F/study/utils/地址级联/load_cities.js",
-		"/F/study/utils/地址级联/cities.js",
 		"/C/Users/zuzhaungji/Desktop/jquery.cityselect.js",
 		"/C/Users/zuzhaungji/Desktop/city.min.js",
 		"/C/Users/zuzhaungji/Desktop/zdx_cg/api/getcard.json",
 		"/C/Users/zuzhaungji/Desktop/zdx_cg/api/getcode.json",
 		"/C/Users/zuzhaungji/Desktop/zdx_cg/app/scss/christmas_card_2016.scss",
-		"/C/Users/zuzhaungji/Desktop/zdx_cg/app/scss/christmas_2016.scss",
-		"/C/Users/zuzhaungji/Desktop/zdx_cg/topic/christmas/2016/christmas_preview.html",
 		"/C/Users/zuzhaungji/Downloads/jquery文字上下无缝滚动/js/Marquee.js",
 		"/C/Users/zuzhaungji/Desktop/zdx_cg/topic/blackfriday/friday_2016.html",
 		"/C/Users/zuzhaungji/Desktop/yunos/app/scss/template.scss",
 		"/C/Users/zuzhaungji/Desktop/yunos/app/scss/reset.scss",
 		"/C/Users/zuzhaungji/Desktop/yunos/app/scss/publish.scss",
 		"/C/Users/zuzhaungji/Desktop/yunos/app/scss/new_info.scss",
+		"/C/Users/zuzhaungji/Desktop/yunos/app/scss/login.scss",
 		"/C/Users/zuzhaungji/Desktop/yunos/app/scss/material_library.scss",
 		"/C/Users/zuzhaungji/Desktop/zdx_cg/topic/spread/video_01.html",
 		"/C/Users/zuzhaungji/Desktop/zdx_cg/other/campaign/video_01.html",
@@ -650,7 +667,6 @@
 		"/F/study/utils/ueditor-1.4.3.3/themes/default/_css/menu.css",
 		"/F/study/utils/ueditor-1.4.3.3/themes/default/_css/editor.css",
 		"/C/Users/zuzhaungji/Desktop/zdx_cg/topic/eleven/eleven_2016.html",
-		"/C/Users/zuzhaungji/Desktop/zdx_cg/newindex/page_article.html",
 		"/C/Users/zuzhaungji/Desktop/zdx_cg/newindex/index_article.html",
 		"/F/study/utils/ueditor-1.4.3.3/dialogs/template/template.html",
 		"/F/study/utils/ueditor-1.4.3.3/ueditor.parse.js",
@@ -661,6 +677,7 @@
 		"/F/study/utils/ueditor1_4_3_1-src/package.json",
 		"/F/study/utils/ueditor1_4_3_1-src/Gruntfile.js",
 		"/C/Users/zuzhaungji/Desktop/chudian/app/scss/common.scss",
+		"/C/Users/zuzhaungji/Desktop/chudian/gulpfile.js",
 		"/F/study/utils/README.md",
 		"/C/Users/zuzhaungji/Desktop/yunos/app/js/jquery.js",
 		"/C/Users/zuzhaungji/Desktop/chudian/app/css/common.css",
@@ -679,24 +696,7 @@
 		"/C/Users/zuzhaungji/Desktop/分管（修改）1201/dist/manage/addtem.html",
 		"/C/Users/zuzhaungji/Desktop/yanwo3.html",
 		"/C/Users/zuzhaungji/Desktop/更新/html/yanwo2.html",
-		"/C/Users/zuzhaungji/Desktop/分管（修改）1201/dist/manage/manage_application.html",
-		"/C/Users/zuzhaungji/Desktop/分管（修改）1201/dist/manage/modal_edit_update.html",
-		"/C/Users/zuzhaungji/Desktop/分管（修改）1201/dist/manage/modal_personal.html",
-		"/C/Users/zuzhaungji/Desktop/分管（修改）1201/dist/manage/review.html",
-		"/C/Users/zuzhaungji/Desktop/分管（修改）1201/dist/manage/template.html",
-		"/C/Users/zuzhaungji/Desktop/分管（修改）1201/dist/manage/template_personal.html",
-		"/C/Users/zuzhaungji/Desktop/分管（修改）1201/app/css/common.css",
-		"/C/Users/zuzhaungji/Desktop/分管（修改）1201/app/css/index.css",
-		"/C/Users/zuzhaungji/Desktop/分管（修改）1201/app/css/manage_application.css",
-		"/C/Users/zuzhaungji/Desktop/分管（修改）1201/app/css/modal_edit_update.css",
-		"/C/Users/zuzhaungji/Desktop/分管（修改）1201/app/css/nivo-slider.css",
-		"/C/Users/zuzhaungji/Desktop/分管（修改）1201/app/css/reset.css",
-		"/C/Users/zuzhaungji/Desktop/分管（修改）1201/app/css/review.css",
-		"/C/Users/zuzhaungji/Desktop/分管（修改）1201/app/css/template.css",
-		"/C/Users/zuzhaungji/Desktop/分管（修改）1201/app/css/addtem.css",
-		"/C/Users/zuzhaungji/Desktop/chudian/app/scss/manage_application.scss",
-		"/C/Users/zuzhaungji/Desktop/zdx_cg/api/Details.json",
-		"/C/Users/zuzhaungji/Desktop/chudian/view/super/person_manage.html"
+		"/C/Users/zuzhaungji/Desktop/分管（修改）1201/dist/manage/manage_application.html"
 	],
 	"find":
 	{
@@ -714,13 +714,21 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"choose_picture",
-			"\"../app",
-			"});",
-			"n_vidio_right_list",
-			"video_item",
-			"add_editorImg",
-			"add_img",
+			"swipeFuc",
+			"/6.1",
+			"page",
+			"christmas/2016",
+			"christmas/2016/",
+			"../../../",
+			"scroll",
+			"_oData",
+			"cacheMasonry",
+			"totalPage",
+			"</div>								\n							</a>",
+			"</div>								\n							</a> ",
+			"script",
+			"friday",
+			"div class=\"product_item\"",
 			"$.browser",
 			"required",
 			",{\n								\"name\":\"王五\"\n							}]",
@@ -833,15 +841,7 @@
 			"div class=\"item_pro box\"",
 			"pro_list",
 			"href=\"#\"",
-			"jQuery",
-			"</em>",
-			"</a><em>",
-			"href=\"#\"",
-			"</li>",
-			"<li>",
-			"adv",
-			"btn",
-			"dx_contain"
+			"jQuery"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -849,10 +849,15 @@
 		"regex": false,
 		"replace_history":
 		[
-			"\"../../app",
-			"\"../app/..",
-			"\"../app..",
-			"\"../app../",
+			"/123",
+			"spring_text",
+			"spring_text/",
+			"spring_text",
+			"../../",
+			"_allData",
+			"</div>	\n								<i></i>							\n							</a> ",
+			"year_end_sales",
+			"a class=\"product_item\" href=\"#\"",
 			",{\n								\"name\":\"李四\"\n							}]",
 			"\"name\":\"李四\"",
 			"\"name\":\"张三\"",
@@ -971,11 +976,7 @@
 			"<i class=\"icon iconfont\">&#xe614;</i>",
 			"<i class=\"icon iconfont\">&#xe612;</i>",
 			"fs18_rem",
-			" class=\"caa move_info\"",
-			"<i class=\"icon iconfont\">&#xe614;</i>",
-			"<i class=\"icon iconfont\">&#xe613;</i>",
-			"<i class=\"icon iconfont\">&#xe612;</i>",
-			"<span class=\"c65\">&or;</span>"
+			" class=\"caa move_info\""
 		],
 		"reverse": false,
 		"show_context": true,
@@ -983,12 +984,6 @@
 		"whole_word": false,
 		"wrap": true
 	},
-	"folders":
-	[
-		{
-			"path": "C:\\Users\\zuzhaungji\\Desktop\\networkService"
-		}
-	],
 	"groups":
 	[
 		{
@@ -1033,7 +1028,7 @@
 		"height": 0.0
 	},
 	"pinned_build_system": "",
-	"project": "",
+	"project": "network2.sublime-project",
 	"replace":
 	{
 		"height": 52.0
@@ -1074,7 +1069,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 263.0,
+	"side_bar_width": 276.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

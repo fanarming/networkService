@@ -7,7 +7,7 @@ body {
 .line_height30 {
     line-height: 30px;  
 }
-
+  
 .g_wrapper {
     position: relative;
     width: 960px;
@@ -38,6 +38,7 @@ body {
             margin-right: 35px;
             color: #fff;
             font-size: 14px;
+            cursor: pointer;
 
             img {
                 display: inline-block;
@@ -107,6 +108,11 @@ body {
             display: block;
             width: 100%;
             height: 100%;
+
+            &.gray_bac {
+                border-radius: 50%;
+                background: rgba(0,0,0,.8);
+            }
         }
     }
 
@@ -729,8 +735,10 @@ body {
     position: absolute;
     top: 14px;
     left: 16px;
-    width: 928px;
-    height: 492px;
+    /* width: 928px;
+    height: 492px; */
+    width: 0;
+    height: 0;
     z-index: 9;
     background: #fff;
     border-radius: 10px;
@@ -1260,6 +1268,7 @@ body {
 }
 
 .personal_setting_wrp {
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -1335,6 +1344,31 @@ body {
             &_editing {
                 margin-top: 20px;
                 text-align: center;
+                
+                .avatar {
+                    position: relative;
+                    height: 148px;
+                }
+
+                .avatar_upload_wrp {
+                    position: absolute;
+                    left: 50%;
+                    top: 0;
+                    margin-left: -74px;
+                    width: 148px;
+                    height: 148px;
+                    border-radius: 50%;
+                    overflow: hidden;
+
+                    .avatar_upload {
+                        opacity: 0;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
 
                 .user_name {
                     margin-top: 20px;                    
