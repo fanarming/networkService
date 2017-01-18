@@ -4,8 +4,20 @@
 		"selected_items":
 		[
 			[
+				"remov",
+				"removeClass	.removeClass()"
+			],
+			[
+				"close_",
+				"close_win_btn"
+			],
+			[
 				"back",
 				"background"
+			],
+			[
+				"right",
+				"right_box_block"
 			],
 			[
 				"im",
@@ -502,23 +514,51 @@
 			[
 				"ani",
 				"animate	.animate()"
-			],
-			[
-				"wra",
-				"personal_center_wrapper"
-			],
-			[
-				"mouse",
-				"mouseover	.mouseover()"
-			],
-			[
-				"inlin",
-				"inline-block"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "app/scss/index.scss",
+			"settings":
+			{
+				"buffer_size": 51040,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "view/index.html",
+			"settings":
+			{
+				"buffer_size": 41550,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/js/index.js",
+			"settings":
+			{
+				"buffer_size": 23314,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/js/jquery.scrollify.min.js",
+			"settings":
+			{
+				"buffer_size": 3259,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/js/jquery.easing.1.3.js",
+			"settings":
+			{
+				"buffer_size": 8097,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -565,10 +605,16 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/zuzhaungji/Desktop/network2"
+		"/C/Users/zuzhaungji/Desktop/network2",
+		"/C/Users/zuzhaungji/Desktop/network2/app",
+		"/C/Users/zuzhaungji/Desktop/network2/app/js",
+		"/C/Users/zuzhaungji/Desktop/network2/app/scss",
+		"/C/Users/zuzhaungji/Desktop/network2/view"
 	],
 	"file_history":
 	[
+		"/F/study/utils/上下翻页/上下整体翻页.html",
+		"/F/study/utils/上下翻页/scroll.js",
 		"/C/Users/zuzhaungji/Desktop/zdx_cg/topic/christmas/2016/christmas.html",
 		"/C/Users/zuzhaungji/Desktop/zdx_cg/app/css/list_article2.css",
 		"/C/Users/zuzhaungji/Desktop/zdx_cg/api/goodsNewList.json",
@@ -694,13 +740,11 @@
 		"/C/Users/zuzhaungji/Desktop/分管（修改）1201/dist/manage/modal.html",
 		"/C/Users/zuzhaungji/Desktop/分管（修改）1201/dist/manage/index.html",
 		"/C/Users/zuzhaungji/Desktop/分管（修改）1201/dist/manage/addtem.html",
-		"/C/Users/zuzhaungji/Desktop/yanwo3.html",
-		"/C/Users/zuzhaungji/Desktop/更新/html/yanwo2.html",
-		"/C/Users/zuzhaungji/Desktop/分管（修改）1201/dist/manage/manage_application.html"
+		"/C/Users/zuzhaungji/Desktop/yanwo3.html"
 	],
 	"find":
 	{
-		"height": 28.0
+		"height": 36.0
 	},
 	"find_in_files":
 	{
@@ -714,6 +758,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"screenShot",
+			"test",
+			"see_more",
+			"close_personal_btn",
+			"my_groupup",
+			"see_usetime",
+			"speed_test_wrp",
+			"speed_test_btn",
 			"swipeFuc",
 			"/6.1",
 			"page",
@@ -833,15 +885,7 @@
 			"dx_fixed_speed_ball_mes",
 			"page_detail",
 			"item_read",
-			"item_detail",
-			"<p class=\"article_name\">雀巢德龙胶囊咖啡机</p>\n                    <p class=\"article_des\">首相之选，咖啡馆级别的咖啡机</p>",
-			"Sellers/l1.jpg",
-			"item_read",
-			"line",
-			"div class=\"item_pro box\"",
-			"pro_list",
-			"href=\"#\"",
-			"jQuery"
+			"item_detail"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -987,8 +1031,154 @@
 	"groups":
 	[
 		{
+			"selected": 2,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "app/scss/index.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 51040,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								36863,
+								36863
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 24617.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "view/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 41550,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								386,
+								386
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 240.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/js/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 23314,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								181,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/js/jquery.scrollify.min.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3259,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 27917.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/js/jquery.easing.1.3.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 8097,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": -0.0,
+						"translation.y": 2280.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
 			]
 		}
 	],
