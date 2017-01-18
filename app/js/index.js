@@ -51,18 +51,21 @@ $(function(){
 						$($(self).attr('data-show')).siblings().hide().end().show();
 					} else {
 						
-						$('.gl_loading').removeClass('hide');
+						//$('.gl_loading').removeClass('hide');
+						$('.gl_loading').show();
 						if($(self).attr('data-show')=='#block5' && $(self).attr('flag')>1){							
 							$('.gl_loading').css('background','transparent');
 							$($(self).attr('data-show')).siblings().hide().end().fadeIn();
 							setTimeout(function(){
-								$('.gl_loading').addClass('hide');								
+								//$('.gl_loading').addClass('hide');								
+								$('.gl_loading').fadeOut();								
 							},1000);
 						}else {
 							$('.gl_loading').css('background','#fff');
+							$($(self).attr('data-show')).siblings().hide().end().fadeIn();
 							setTimeout(function(){
-								$('.gl_loading').addClass('hide');
-								$($(self).attr('data-show')).siblings().hide().end().fadeIn();
+								//$('.gl_loading').addClass('hide');	
+								$('.gl_loading').fadeOut();							
 							},1000);
 						}						
 					}						
